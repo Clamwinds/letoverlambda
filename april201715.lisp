@@ -144,16 +144,16 @@
   (sleep
    (* value
       (case unit
-        ((s 1)
-         ((m) 60)
+        ((s) 1)
+          ((m) 60)
           ((h) 3600)
           ((d) 86400)
           ((ms) 1/1000)
-          ((us) 1/1000000)))))))
+          ((us) 1/1000000)))))
                                         ; "In languages like C it is customary to use an underlying data type like int and assign arbitrary values corresponding to the differet units. But in lisp the most obvious way to signal the desired unit is to use a symbol. A symbol in lisp exists mostly to be something not eq to other symbols. Eq is the fastest lisp comparison operator and roughly corresponds to a pointer comparison. Since pointers can be compared very quickly, symbols provide a very fast and convenient way t let two or mor different lisp expressions know you're referring to the same thing."
 
-(sleep-units% 2 'm)
-(sleep-units% 500 'us)
+(sleep-units% 2 `m)
+(sleep-units% 500 `us)
 
 (defmacro sleep-units (value unit)
   `(sleep
@@ -164,7 +164,7 @@
          ((h) 3600)
           ((d) 86400)
           ((ms) 1/1000)
-          ((us) 1/1000000))))
+          ((us) 1/1000000)))))
 
                                         ; for this on ` worked over '
 (sleep-units .5 h)

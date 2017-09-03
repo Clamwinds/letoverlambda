@@ -1,0 +1,24 @@
+unknown parameter /home/lucien/code/javascript/meteor/simple-todos/Hours by job code- 12-1.csv.
+Please specify csv file path or pipe the csv data through.
+
+Usage: csvtojson [<command>] [<options>] filepath
+
+Commands: 
+	parse: (Default)Parse a csv file to json
+	startserver: (Deprecated)Start a web server
+Options: 
+	--delimiter: delimiter to separate columns. default comma (,). e.g. --delimiter=#
+	--quote: quote surrounding a column content containing delimiters. default double quote ("). e.g. --quote=# 
+	--trim: Indicate if parser trim off spaces surrounding column content. e.g. " content " will be trimmed to "content". Default: true
+	--checkType: This parameter turns on and off whether check field type. default is true.
+	--ignoreEmpty: This parameter turns on and off whether ignore empty column values while parsing. default is false
+	--workerNum: Number of worker processes. The worker process will use multi-cores to help process CSV data. Set to number of Core to improve the performance of processing large csv file. Keep 1 for small csv files. Default 1.
+	--noheader: Indicating csv data has no header row and first row is data row. Default is false
+	--headers: An array to specify the headers of CSV data. If --noheader is false, this value will override CSV header. Default: null. Example: ["my field","name"]
+	--maxRowLength: the max character a csv row could have. 0 means infinite. If max number exceeded, parser will emit "error" of "row_exceed". if a possibly corrupted csv data provided, give it a number like 65535 so the parser wont consume memory. default: 0
+	--checkColumn: whether check column number of a row is the same as headers. If column number mismatched headers number, an error of "mismatched_column" will be emitted.. default: false
+Examples: 
+	csvtojson < csvfile
+	csvtojson <path to csvfile>
+	cat <csvfile> | csvtojson
+	csvtojson <csvfilepath> --checkType=false --trim=false --delimiter=#

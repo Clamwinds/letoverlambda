@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>Lightweight Infinite Scrolling using Twitter API - Backbone.js Tutorials</title>
+<link href="/atom.xml" rel="alternate" title="backbone tutorials" type="application/atom+xml">
+   <meta name="author" content="Backbone Tutorials" />
+   <!-- syntax highlighting CSS -->
+
+   <!-- syntax highlighting CSS -->
+   <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+   
+   <!-- Homepage CSS -->
+   <link rel="stylesheet" href="//bootswatch.com/sandstone/bootstrap.min.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/style.css" type="text/css" media="screen, projection" />
+   <link href="https://fonts.googleapis.com/css?family=Arvo:400,700&subset=latin" rel="stylesheet" type="text/css">
+
+
+   <!-- Typekit -->
+   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+ 
+  
+   
+
+</head>
+<body>
+
+  <div class="row">
+
+      <div class="navbar navbar-default">
+      <div class="container">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="/">Backbone Tutorials</a>
+  </div>
+  <div class="navbar-collapse collapse navbar-responsive-collapse">
+    <ul class="nav navbar-nav">
+              <li class=""><a href="/">Tutorials</a></li>
+
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+       <li><a href="http://prerender.io"><strong>Need SEO?</strong></a></li>
+      <li><a href="https://leanpub.com/backbonetutorials">Download eBook (.pdf, .MOBI, .ePub)</a></li>
+    </ul>
+  </div>
+</div>
+
+</div>
+
+
+<div class="container">
+<div class="row">
+<div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">About</h3>
+      </div>
+      <div class="panel-body">
+  <div class="col-lg-4">
+    
+    <p>Backbone Tutorials is a collection of tutorials written by <a href="http://thomasdav.is">Thomas Davis</a>. Everything is open source and I try my best to keep the tutorials updated. Though I am busy and only work on this is my spare time so many <a href="https://github.com/thomasdavis/backbonetutorials/graphs/contributors">contributors</a> have also help me put this resource together.</p>
+<a href="https://twitter.com/neutralthoughts" class="twitter-follow-button" data-show-count="true">Follow @neutralthoughts</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>   
+ </div>
+  <div class="col-lg-8">
+        <h3 >Backbone.js Beginner Video Tutorial</h3>
+      <img src="/backbone.png" style="float: left;" /><p>I have put extra effort into making a very easy to understand Backbone.js video which is also free.   It is 70mins long and covers everything you need to know when getting started.</p>
+      <a href="https://www.youtube.com/watch?v=FZSjvWtUxYk" class="btn btn-primary">Watch Video</a>
+  </div>
+  
+ </div>
+  </div>
+</div>
+      <div id="post">
+<h1>Lightweight Infinite Scrolling using Twitter API</h1>
+
+<h2>Getting started</h2>
+
+<p>In this example we are going to build a widget that pulls in tweets and when the user scrolls to the bottom of the widget Backbone.js will re-sync with the server to bring down the next page of results.</p>
+
+<p><a href="http://backbonetutorials.com/examples/infinite-scroll/">Example Demo</a></p>
+
+<p><a href="https://github.com/thomasdavis/backbonetutorials/tree/gh-pages/examples/infinite-scroll">Example Source</a></p>
+
+<p><em>Note: This tutorial will use <a href="http://backbonetutorials.com/organizing-backbone-using-modules">AMD</a> for modularity.</em></p>
+
+<h2>The Twitter Collection</h2>
+
+<p>Twitter offers a jsonp API for browsing tweets.  The first thing to note is that we have to append &#39;&amp;callback?&#39; to allow cross domain Ajax calls which is a feature of <a href="http://en.wikipedia.org/wiki/JSONP">jsonp</a>.</p>
+
+<p>Using the &#39;q&#39; and &#39;page&#39; query parameters we can find the results we are after.  In the collection definition below we have set some defaults which can be overridden at any point.</p>
+
+<p>Twitter&#39;s search API actually returns a whole bunch of meta information alongside the results.  Though this is a problem for Backbone.js because a Collection expects to be populated with an array of objects. So in our collection definition we can override the Backbone.js default parse function to instead choose the correct property to populate the collection.  </p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// collections/twitter.js</span>
+<span class="nx">define</span><span class="p">([</span>
+  <span class="s1">&#39;jquery&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;underscore&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;backbone&#39;</span>
+<span class="p">],</span> <span class="kd">function</span><span class="p">(</span><span class="nx">$</span><span class="p">,</span> <span class="nx">_</span><span class="p">,</span> <span class="nx">Backbone</span><span class="p">){</span>
+  <span class="kd">var</span> <span class="nx">Tweets</span> <span class="o">=</span> <span class="nx">Backbone</span><span class="p">.</span><span class="nx">Collection</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+    <span class="nx">url</span><span class="o">:</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="s1">&#39;http://search.twitter.com/search.json?q=&#39;</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">query</span> <span class="o">+</span> <span class="s1">&#39;&amp;page=&#39;</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">page</span> <span class="o">+</span> <span class="s1">&#39;&amp;callback=?&#39;</span>
+    <span class="p">},</span>
+    <span class="c1">// Because twitter doesn&#39;t return an array of models by default we need</span>
+    <span class="c1">// to point Backbone.js at the correct property</span>
+    <span class="nx">parse</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">resp</span><span class="p">,</span> <span class="nx">xhr</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="nx">resp</span><span class="p">.</span><span class="nx">results</span><span class="p">;</span>
+    <span class="p">},</span>
+    <span class="nx">page</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="nx">query</span><span class="o">:</span> <span class="s1">&#39;backbone.js tutorials&#39;</span>
+  <span class="p">});</span>
+
+  <span class="k">return</span> <span class="nx">Tweets</span><span class="p">;</span>
+<span class="p">});</span></code></pre></div>
+
+<p><em>Note: Feel free to attach the meta information returned by Twitter to the collection itself e.g.</em></p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">parse</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">resp</span><span class="p">,</span> <span class="nx">xhr</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">completed_in</span> <span class="o">=</span> <span class="nx">resp</span><span class="p">.</span><span class="nx">completed_in</span>
+  <span class="k">return</span> <span class="nx">resp</span><span class="p">.</span><span class="nx">results</span><span class="p">;</span>
+<span class="p">},</span></code></pre></div>
+
+<h2>Setting up the View</h2>
+
+<p>The first thing to do is to load our Twitter collection and template into the widget module. We should attach our collection to our view in our <code>initialize</code> function. <code>loadResults</code> will be responsible for calling fetch on our Twitter collection. On success we will append the latest results to our widget using our template. Our Backbone.js <code>events</code> will listen for <code>scroll</code> on the current <code>el</code> of the view which is &#39;.twitter-widget&#39;. If the current <code>scrollTop</code> is at the bottom then we simply increment the Twitter collections current page property and call <code>loadResults</code> again.</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// views/twitter/widget.js</span>
+<span class="nx">define</span><span class="p">([</span>
+  <span class="s1">&#39;jquery&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;underscore&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;backbone&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;vm&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;collections/twitter&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;text!templates/twitter/list.html&#39;</span>
+<span class="p">],</span> <span class="kd">function</span><span class="p">(</span><span class="nx">$</span><span class="p">,</span> <span class="nx">_</span><span class="p">,</span> <span class="nx">Backbone</span><span class="p">,</span> <span class="nx">Vm</span><span class="p">,</span> <span class="nx">TwitterCollection</span><span class="p">,</span> <span class="nx">TwitterListTemplate</span><span class="p">){</span>
+  <span class="kd">var</span> <span class="nx">TwitterWidget</span> <span class="o">=</span> <span class="nx">Backbone</span><span class="p">.</span><span class="nx">View</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+    <span class="nx">el</span><span class="o">:</span> <span class="s1">&#39;.twitter-widget&#39;</span><span class="p">,</span>
+    <span class="nx">initialize</span><span class="o">:</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+      <span class="c1">// isLoading is a useful flag to make sure we don&#39;t send off more than</span>
+      <span class="c1">// one request at a time</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">isLoading</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">twitterCollection</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">TwitterCollection</span><span class="p">();</span>
+    <span class="p">},</span>
+    <span class="nx">render</span><span class="o">:</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">loadResults</span><span class="p">();</span>
+    <span class="p">},</span>
+    <span class="nx">loadResults</span><span class="o">:</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+      <span class="kd">var</span> <span class="nx">that</span> <span class="o">=</span> <span class="k">this</span><span class="p">;</span>
+      <span class="c1">// we are starting a new load of results so set isLoading to true</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">isLoading</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+      <span class="c1">// fetch is Backbone.js native function for calling and parsing the collection url</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">twitterCollection</span><span class="p">.</span><span class="nx">fetch</span><span class="p">({</span> 
+        <span class="nx">success</span><span class="o">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">tweets</span><span class="p">)</span> <span class="p">{</span>
+          <span class="c1">// Once the results are returned lets populate our template</span>
+          <span class="nx">$</span><span class="p">(</span><span class="nx">that</span><span class="p">.</span><span class="nx">el</span><span class="p">).</span><span class="nx">append</span><span class="p">(</span><span class="nx">_</span><span class="p">.</span><span class="nx">template</span><span class="p">(</span><span class="nx">TwitterListTemplate</span><span class="p">,</span> <span class="p">{</span><span class="nx">tweets</span><span class="o">:</span> <span class="nx">tweets</span><span class="p">.</span><span class="nx">models</span><span class="p">,</span> <span class="nx">_</span><span class="o">:</span><span class="nx">_</span><span class="p">}));</span>
+          <span class="c1">// Now we have finished loading set isLoading back to false</span>
+          <span class="nx">that</span><span class="p">.</span><span class="nx">isLoading</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+        <span class="p">}</span>
+      <span class="p">});</span>      
+    <span class="p">},</span>
+    <span class="c1">// This will simply listen for scroll events on the current el</span>
+    <span class="nx">events</span><span class="o">:</span> <span class="p">{</span>
+      <span class="s1">&#39;scroll&#39;</span><span class="o">:</span> <span class="s1">&#39;checkScroll&#39;</span>
+    <span class="p">},</span>
+    <span class="nx">checkScroll</span><span class="o">:</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+      <span class="kd">var</span> <span class="nx">triggerPoint</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span> <span class="c1">// 100px from the bottom</span>
+        <span class="k">if</span><span class="p">(</span> <span class="o">!</span><span class="k">this</span><span class="p">.</span><span class="nx">isLoading</span> <span class="o">&amp;&amp;</span> <span class="k">this</span><span class="p">.</span><span class="nx">el</span><span class="p">.</span><span class="nx">scrollTop</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">el</span><span class="p">.</span><span class="nx">clientHeight</span> <span class="o">+</span> <span class="nx">triggerPoint</span> <span class="o">&gt;</span> <span class="k">this</span><span class="p">.</span><span class="nx">el</span><span class="p">.</span><span class="nx">scrollHeight</span> <span class="p">)</span> <span class="p">{</span>
+          <span class="k">this</span><span class="p">.</span><span class="nx">twitterCollection</span><span class="p">.</span><span class="nx">page</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;</span> <span class="c1">// Load next page</span>
+          <span class="k">this</span><span class="p">.</span><span class="nx">loadResults</span><span class="p">();</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">});</span>
+  <span class="k">return</span> <span class="nx">TwitterWidget</span><span class="p">;</span>
+<span class="p">});</span></code></pre></div>
+
+<p><em>Note: <code>triggerPoint</code> will allow you to set an offset where the user has to scroll to before loading the next page</em></p>
+
+<h2>The widget template</h2>
+
+<p>Our view above passes into our underscore template the variable tweets which we can simply iterate over with using underscore&#39;s <code>each</code> method.</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c">&lt;!--</span> <span class="nx">templates</span><span class="o">/</span><span class="nx">twitter</span><span class="o">/</span><span class="nx">list</span><span class="p">.</span><span class="nx">html</span> <span class="o">--&gt;</span>
+<span class="o">&lt;</span><span class="nx">ul</span> <span class="kr">class</span><span class="o">=</span><span class="s2">&quot;tweets&quot;</span><span class="o">&gt;</span>
+<span class="o">&lt;%</span> <span class="nx">_</span><span class="p">.</span><span class="nx">each</span><span class="p">(</span><span class="nx">tweets</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">tweet</span><span class="p">)</span> <span class="p">{</span> <span class="o">%&gt;</span>
+
+  <span class="o">&lt;</span><span class="nx">li</span><span class="o">&gt;&lt;%=</span> <span class="nx">tweet</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;text&#39;</span><span class="p">)</span> <span class="o">%&gt;&lt;</span><span class="err">/li&gt; </span>
+
+<span class="o">&lt;%</span> <span class="p">});</span> <span class="o">%&gt;</span>
+<span class="o">&lt;</span><span class="err">/ul&gt;</span></code></pre></div>
+
+<h2>Conclusion</h2>
+
+<p>This is a very lightweight but robust infinite scroll example. There are caveats to using infinite scroll in UI/UX so make sure to only use it when applicable.</p>
+
+<p><a href="http://backbonetutorials.com/examples/infinite-scroll/">Example Demo</a></p>
+
+<p><a href="https://github.com/thomasdavis/backbonetutorials/tree/gh-pages/examples/infinite-scroll">Example Source</a></p>
+
+</div>
+<hr />
+<div class="row">
+<div class="col-lg-4 col-lg-offset-4">
+            <div style="text-align: center;">
+            <img src="https://secure.gravatar.com/avatar/cff733cf90823edd218a834980379c61?s=170" class="img-circle" style=" padding:2px; border: 1px solid #ddd; width: 100px;">
+              <h2>Thomas Davis</h2>
+              <p>Founder of <a href="http://cdnjs.com">cdnjs.com</a>, <a href="http://jsonresume.org">jsonresume.org</a></p>
+              <p>Work with Drones, Open Source, Tech Policy, Javascript and Music. </p>
+<div class="addthis_horizontal_follow_toolbox" style="padding-left: 33px;"></div>
+<br />
+              <a href="https://github.com/thomasdavis">github.com/thomasdavis</a>
+            </div>
+        </div>
+        </div>
+<hr />
+
+
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=thomasdavis" async="async"></script>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'bbtutes'; // required: replace example with your forum shortname
+    var disqus_url = 'http://backbonetutorials.com/infinite-scroll';
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+
+
+</div>
+<script src="//static.getclicky.com/js" type="text/javascript"></script>
+<script type="text/javascript">try{ clicky.init(66406579); }catch(e){}</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/66406579ns.gif" /></p></noscript>
+
+</body>
+</html>

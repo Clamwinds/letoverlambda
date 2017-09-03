@@ -1,0 +1,26 @@
+[
+    {
+    "username": "marielbecerra",
+    "payroll_id": "",
+    "fname": "Mariel",
+    "lname": "Becerra",
+    "number": 0,
+    "group": "Service Crew",
+    "local_date": "2015-12-04",
+    "local_day": "Fri",
+    "local_start_time": ISODate("2015-12-04T04:20:20Z"),
+    "local_end_time": ISODate("2015-12-04T04:45:36Z"),
+    "tz": -8,
+    "hours": 0.42,
+    "jobcode_1": "Home (cleaning)",
+    "jobcode_2": "At building",
+    "jobcode_3": "",
+    "jobcode_4": "",
+    "location": "TSheets Android App",
+    "notes": "",
+    "approved_status": "unapproved",
+    "whatMonth": 12,
+    "whatShift": 3,
+    "whatTime": ISODate("2015-12-04T04:20:20Z")
+    }
+ ]

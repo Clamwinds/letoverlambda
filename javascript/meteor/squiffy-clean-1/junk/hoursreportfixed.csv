@@ -1,0 +1,7 @@
+"Summary report for 2015-11-16 through 2015-11-30","field1","field2","field3","field4","field5","field6","field7","field8","field9","field10","field11",
+"payroll_id","type","hours","total_seconds","username","number","fname","lname","group_name","start_date","end_date","approved_thru","submitted_thru"
+,"s1","s2","s3","s4","s5","s6","s7","s8","s9","sd","sc",
+,"REG","4.83","17398","kimbeltran","0","Kimberley","Beltran","Service Crew","2015-11-16","2015-11-30","1999-12-31","1999-12-31"
+,"REG","4.83","17398","veronicarivas","0","Veronica","Rivas","Service Crew","2015-11-16","2015-11-30","1999-12-31","1999-12-31"
+,"REG","32.46","116863","liamsimard","10","Liam","Simard","-","2015-11-16","2015-11-30","2015-11-12","2015-11-12"
+,"REG","14.67","52799","eduardotorres","11","Eduardo","Torres","Service Crew","2015-11-16","2015-11-30","1999-12-31","1999-12-31"

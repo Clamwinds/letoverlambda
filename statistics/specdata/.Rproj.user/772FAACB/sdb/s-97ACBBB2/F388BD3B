@@ -1,0 +1,17 @@
+{
+    "contents" : "pollutantmean <- function(directory, pollutant, id = 1:332) {\n  ## 'directory' is a character vector of length 1 indicating the location of\n  ## the CSV files\n  \n  ## 'pollutant' is a character vector of length 1 indicating the name of the\n  ## pollutant for which we will calculate the mean; either 'sulfate' or\n  ## 'nitrate'.\n  \n  ## 'id' is an integer vector indicating the monitor ID numbers to be used\n  \n  ## Return the mean of the pollutant across all monitors list in the 'id'\n  ## vector (ignoring NA values)\n  data = numeric()\n  for (i in id) {\n    \n    dataRead = read.csv(paste(directory, \"/\", formatC(i, width = 3, flag = \"0\"), \n                             \".csv\", sep = \"\")) # this is directory read boilerplate\n    \n    data = c(data, dataRead[[pollutant]]) #assigning the data numeric declared earlier\n  }\n  return(mean(data, na.rm = TRUE)) #returns data\n}\n\npollutantmean(\"specdata\", \"nitrate\", 23)",
+    "created" : 1429399058343.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3709957794",
+    "id" : "F388BD3B",
+    "lastKnownWriteTime" : 1429645964,
+    "path" : "~/R/specdata/assignment1.r",
+    "project_path" : "assignment1.r",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

@@ -1,0 +1,17 @@
+{
+    "contents" : "gold <- Quandl(\"BUNDESBANK/BBK01_WT5511\", type=\"zoo\", transformation=\"rdiff\")\noil <- Quandl(\"DOE/RBRTE\", type=\"zoo\", transformation=\"rdiff\")\nbeta_data <- merge(gold, oil)\nlm(coredata(beta_data[,1]) ~ coredata(beta_data[,2]), na.action=na.omit)$coef[2]\n\n",
+    "created" : 1436571924178.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1990110942",
+    "id" : "DF9A4B7F",
+    "lastKnownWriteTime" : 1436586472,
+    "path" : "~/code/statistics/betagoldoil.R",
+    "project_path" : "statistics/betagoldoil.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

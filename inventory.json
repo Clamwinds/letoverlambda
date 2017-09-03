@@ -1,0 +1,98 @@
+[
+    {
+        "Name": "Ultra Concentrated Acid Bathroom Cleaner",
+        "Setting": "Low",
+        "Price": "84.95",
+        "CostPerUnit": ".483",
+        "YieldPerUnit": "176",
+        "Unit": "32 oz spray bottle"
+    },
+    {
+        "Name": "Ultra Concentrated Acid Bathroom Cleaner",
+        "Setting": "Medium",
+        "Price": "84.95",
+        "CostPerUnit": ".725",
+        "YieldPerUnit": "117",
+        "Unit": "32 oz spray bottle"
+    },
+    {
+        "Name": "Ultra Concentrated Acid Bathroom Cleaner",
+        "Setting": "Ultra",
+        "Price": "84.95",
+        "CostPerUnit": "966",
+        "YieldPerUnit": "88",
+        "Unit": "32 oz spray bottle"
+    },
+    {
+        "Name": "FACILIPRO Ultra Concentrated Laundry Fresh Air Freshener 2 - 1.30 L",
+        "Setting": "Low",
+        "Price": "74.06",
+        "CostPerUnit": ".211",
+        "YieldPerUnit": "352",
+        "Unit": "32 oz Spray Bottles"
+    },
+    {
+        "Name": "FACILIPRO Ultra Concentrated Laundry Fresh Air Freshener 2 - 1.30 L",
+        "Setting": "Medium",
+        "Price": "74.06",
+        "CostPerUnit": ".421",
+        "YieldPerUnit": "176",
+        "Unit": "32 oz Spray Bottles"
+    },
+    {
+        "Name": "FACILIPRO Ultra Concentrated Laundry Fresh Air Freshener 2 - 1.30 L",
+        "Setting": "High",
+        "Price": "74.06",
+        "CostPerUnit": ".843",
+        "YieldPerUnit": "117",
+        "Unit": "32 oz Spray Bottles"
+    },
+    {
+        "Name": "High Performance Neutral FloorCleaner (QC)2 - 1.30 lt",
+        "Setting": "Low",
+        "Price": "44.75",
+        "CostPerUnit": ".382",
+        "YieldPerUnit": "117",
+        "Unit": "3 gallon mop buckets"
+    },
+    {
+        "Name": "High Performance Neutral FloorCleaner (QC)2 - 1.30 lt",
+        "Setting": "Medium",
+        "Price": "44.75",
+        "CostPerUnit": "1.527",
+        "YieldPerUnit": "59",
+        "Unit": "3 gallon mop buckets"
+    },
+    {
+        "Name": "High Performance Neutral FloorCleaner (QC)2 - 1.30 lt",
+        "Setting": "High",
+        "Price": "44.75",
+        "CostPerUnit": "1.527",
+        "YieldPerUnit": "29",
+        "Unit": "3 gallon mop buckets"
+    },
+    {
+        "Name": "QC 54 Peroxide Glass and SurfaceCleaner 2 - 1.30 L",
+        "Setting": "Low",
+        "Price": "66.93",
+        "CostPerUnit": ".19",
+        "YieldPerUnit": "352",
+        "Unit": "32 oz Spray Bottles"
+    },
+    {
+        "Name": "QC 54 Peroxide Glass and SurfaceCleaner 2 - 1.30 L",
+        "Setting": "Medium",
+        "Price": "66.93",
+        "CostPerUnit": ".381",
+        "YieldPerUnit": "176",
+        "Unit": "32 oz Spray Bottles"
+    },
+    {
+        "Name": "QC 54 Peroxide Glass and SurfaceCleaner 2 - 1.30 L",
+        "Setting": "Medium",
+        "Price": "66.93",
+        "CostPerUnit": ".761",
+        "YieldPerUnit": "88",
+        "Unit": "32 oz Spray Bottles"
+    }
+]

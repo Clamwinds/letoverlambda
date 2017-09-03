@@ -1,0 +1,17 @@
+{
+    "contents" : "complete <- function(directory, id = 1:332) {\n     ## 'directory' is a character vector of length 1 indicating the location of\n       ## the CSV files\n       \n       ## 'id' is an integer vector indicating the monitor ID numbers to be used\n       \n       ## Return a data frame of the form: id nobs 1 117 2 1041 ...  where 'id' is\n       ## the monitor ID number and 'nobs' is the number of complete cases\n       nobs = numeric()\n     for (i in id) {\n         \n           newRead = read.csv(paste(directory, \"/\", formatC(i, width = 3, flag = \"0\"), \n                                                                   \".csv\", sep = \"\"))\n         nobs = c(nobs, sum(complete.cases(newRead)))\n       }\n     \n     return(data.frame(id, nobs))\n   }\n #Write a function that reads a directory full of files and reports the number of \n   #completely observed cases in each data file. The function should return a data frame where the first column is \n   #the name of the file and the second column is the number of complete cases. A prototype of this function follows \n\n   complete(\"specdata\", c(2, 4, 8, 10, 12))",
+    "created" : 1429646759985.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4246847495",
+    "id" : "DA4B3296",
+    "lastKnownWriteTime" : 1429648232,
+    "path" : "~/code/statistics/complete.R",
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

@@ -1,0 +1,14 @@
+;; This buffer is for notes you don't want to save, and for Lisp evaluation.
+;; If you want to create a file, visit that file with C-x C-f,
+;; then enter the text in that file's own buffer.
+6/16/2015
+What sort of programs do I want to write?
+What programs would help me in my life?
+What programs would reduce my cognitive load?
+What programs do other people need?
+What programs in my repo would help me get a job?
+
+What data science blog posts should I use?
+
+An amazon price checker in clojure would be cool, and then it would email me
+what I need.

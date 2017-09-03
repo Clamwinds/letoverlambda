@@ -1,0 +1,17 @@
+{
+    "contents" : "rep <- 1e6\nn <- 10\ndata <- array(sample(c(0,1), rep*n, replace=TRUE), c(rep,n))\nprob <- rep(NA, rep)\nfor (i in 1:rep){\n  heads1 <- data[i,1:(n-1)]==1\n  heads2 <- data[i,2:n]==1\n  prob[i] <- sum(heads1 & heads2)/sum(heads1)\n}\n\n#Ok so what is going on in this? This is the code that gelman counted for the criticism of the paper of Tversky/Gilgovihc",
+    "created" : 1436492523980.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1761321744",
+    "id" : "D5C087C0",
+    "lastKnownWriteTime" : 1436643409,
+    "path" : "~/code/statistics/hothand.R",
+    "project_path" : "statistics/hothand.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

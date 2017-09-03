@@ -1,0 +1,1001 @@
+{
+ "results": {
+  "jobcodes": {
+   "3491253": {
+    "id": 3491253,
+    "parent_id": 0,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": true,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Administrative",
+    "last_modified": "2015-11-22T01:02:18+00:00",
+    "created": "2015-11-22T01:02:18+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3958877": {
+    "id": 3958877,
+    "parent_id": 0,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Break",
+    "last_modified": "2015-12-21T03:24:29+00:00",
+    "created": "2015-12-09T04:49:01+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3505537": {
+    "id": 3505537,
+    "parent_id": 0,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": true,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Building 20",
+    "last_modified": "2015-12-03T08:40:18+00:00",
+    "created": "2015-11-23T04:45:43+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595487": {
+    "id": 3595487,
+    "parent_id": 0,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": true,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Building 556",
+    "last_modified": "2015-12-03T08:40:32+00:00",
+    "created": "2015-11-25T01:42:06+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595505": {
+    "id": 3595505,
+    "parent_id": 0,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": true,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Building 583",
+    "last_modified": "2015-12-03T08:40:45+00:00",
+    "created": "2015-11-25T01:44:19+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595525": {
+    "id": 3595525,
+    "parent_id": 0,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": true,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Hacker Dojo",
+    "last_modified": "2015-12-03T08:50:05+00:00",
+    "created": "2015-11-25T01:45:36+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3636133": {
+    "id": 3636133,
+    "parent_id": 0,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": true,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Home (cleaning)",
+    "last_modified": "2015-12-03T08:54:37+00:00",
+    "created": "2015-11-26T02:55:19+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3748108": {
+    "id": 3748108,
+    "parent_id": 0,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Laundry",
+    "last_modified": "2015-12-03T08:03:05+00:00",
+    "created": "2015-12-03T08:03:05+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3958875": {
+    "id": 3958875,
+    "parent_id": 0,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Meeting",
+    "last_modified": "2015-12-09T04:42:59+00:00",
+    "created": "2015-12-09T04:42:59+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595483": {
+    "id": 3595483,
+    "parent_id": 0,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Start shift",
+    "last_modified": "2015-12-04T08:19:07+00:00",
+    "created": "2015-11-25T01:41:51+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3660741": {
+    "id": 3660741,
+    "parent_id": 0,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Travel",
+    "last_modified": "2015-12-03T08:50:51+00:00",
+    "created": "2015-11-30T08:46:53+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "4127198": {
+    "id": 4127198,
+    "parent_id": 3491253,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Daily\/weekly job sheets",
+    "last_modified": "2015-12-17T07:28:27+00:00",
+    "created": "2015-12-17T07:28:27+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "4127200": {
+    "id": 4127200,
+    "parent_id": 3491253,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "General",
+    "last_modified": "2015-12-18T01:23:08+00:00",
+    "created": "2015-12-17T07:28:45+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "4127196": {
+    "id": 4127196,
+    "parent_id": 3491253,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Invoices",
+    "last_modified": "2015-12-17T07:28:13+00:00",
+    "created": "2015-12-17T07:28:13+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "4127194": {
+    "id": 4127194,
+    "parent_id": 3491253,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Scheduling",
+    "last_modified": "2015-12-17T07:28:08+00:00",
+    "created": "2015-12-17T07:28:08+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "4127192": {
+    "id": 4127192,
+    "parent_id": 3491253,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Tsheets",
+    "last_modified": "2015-12-17T07:27:57+00:00",
+    "created": "2015-12-17T07:27:57+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595477": {
+    "id": 3595477,
+    "parent_id": 3505537,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "At building",
+    "last_modified": "2015-12-03T08:40:19+00:00",
+    "created": "2015-11-25T01:40:29+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "4078667": {
+    "id": 4078667,
+    "parent_id": 3505537,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Carpet cleaning",
+    "last_modified": "2015-12-14T22:17:34+00:00",
+    "created": "2015-12-14T22:17:34+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3911357": {
+    "id": 3911357,
+    "parent_id": 3505537,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Deep Clean",
+    "last_modified": "2015-12-08T05:34:10+00:00",
+    "created": "2015-12-08T05:34:10+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595475": {
+    "id": 3595475,
+    "parent_id": 3505537,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Entrances & stairs",
+    "last_modified": "2015-12-03T08:40:19+00:00",
+    "created": "2015-11-25T01:40:17+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3958785": {
+    "id": 3958785,
+    "parent_id": 3505537,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": true,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Kitchens & Bar",
+    "last_modified": "2015-12-09T04:24:35+00:00",
+    "created": "2015-12-09T04:23:29+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3958799": {
+    "id": 3958799,
+    "parent_id": 3505537,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": true,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Restrooms",
+    "last_modified": "2015-12-09T04:25:07+00:00",
+    "created": "2015-12-09T04:25:07+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3986849": {
+    "id": 3986849,
+    "parent_id": 3505537,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Shipping",
+    "last_modified": "2015-12-10T04:18:22+00:00",
+    "created": "2015-12-10T04:18:22+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595473": {
+    "id": 3595473,
+    "parent_id": 3505537,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Surfaces",
+    "last_modified": "2015-12-03T08:40:19+00:00",
+    "created": "2015-11-25T01:40:07+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595443": {
+    "id": 3595443,
+    "parent_id": 3505537,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Trash",
+    "last_modified": "2015-12-03T08:40:19+00:00",
+    "created": "2015-11-25T01:35:43+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595439": {
+    "id": 3595439,
+    "parent_id": 3505537,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Vacuum",
+    "last_modified": "2015-12-03T08:40:19+00:00",
+    "created": "2015-11-25T01:34:34+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595479": {
+    "id": 3595479,
+    "parent_id": 3505537,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Walk-through",
+    "last_modified": "2015-12-03T08:40:19+00:00",
+    "created": "2015-11-25T01:40:49+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595501": {
+    "id": 3595501,
+    "parent_id": 3595487,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "At building",
+    "last_modified": "2015-12-03T08:40:32+00:00",
+    "created": "2015-11-25T01:43:55+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "4078669": {
+    "id": 4078669,
+    "parent_id": 3595487,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Carpet cleaning",
+    "last_modified": "2015-12-14T22:17:59+00:00",
+    "created": "2015-12-14T22:17:59+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3911359": {
+    "id": 3911359,
+    "parent_id": 3595487,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Deep Clean",
+    "last_modified": "2015-12-08T05:34:24+00:00",
+    "created": "2015-12-08T05:34:24+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595493": {
+    "id": 3595493,
+    "parent_id": 3595487,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": true,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Kitchen",
+    "last_modified": "2015-12-03T08:40:32+00:00",
+    "created": "2015-11-25T01:43:22+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3958775": {
+    "id": 3958775,
+    "parent_id": 3595487,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": true,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Restrooms",
+    "last_modified": "2015-12-09T04:21:27+00:00",
+    "created": "2015-12-09T04:21:27+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3986853": {
+    "id": 3986853,
+    "parent_id": 3595487,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Shipping",
+    "last_modified": "2015-12-10T04:18:50+00:00",
+    "created": "2015-12-10T04:18:50+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595499": {
+    "id": 3595499,
+    "parent_id": 3595487,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Surfaces",
+    "last_modified": "2015-12-03T08:40:32+00:00",
+    "created": "2015-11-25T01:43:49+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595491": {
+    "id": 3595491,
+    "parent_id": 3595487,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Trash",
+    "last_modified": "2015-12-03T08:40:32+00:00",
+    "created": "2015-11-25T01:43:00+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595489": {
+    "id": 3595489,
+    "parent_id": 3595487,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Vacuum",
+    "last_modified": "2015-12-03T08:40:32+00:00",
+    "created": "2015-11-25T01:42:38+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595503": {
+    "id": 3595503,
+    "parent_id": 3595487,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Walk-through",
+    "last_modified": "2015-12-03T08:40:32+00:00",
+    "created": "2015-11-25T01:43:59+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3958771": {
+    "id": 3958771,
+    "parent_id": 3595493,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Cleaning",
+    "last_modified": "2015-12-09T04:21:14+00:00",
+    "created": "2015-12-09T04:21:14+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3958773": {
+    "id": 3958773,
+    "parent_id": 3595493,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Mopping",
+    "last_modified": "2015-12-09T04:21:18+00:00",
+    "created": "2015-12-09T04:21:18+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "4045711": {
+    "id": 4045711,
+    "parent_id": 3595493,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": true,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Refrigerator cleaning",
+    "last_modified": "2015-12-14T04:46:09+00:00",
+    "created": "2015-12-14T04:46:09+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3986851": {
+    "id": 3986851,
+    "parent_id": 3595493,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Restocking",
+    "last_modified": "2015-12-10T04:18:45+00:00",
+    "created": "2015-12-10T04:18:45+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595519": {
+    "id": 3595519,
+    "parent_id": 3595505,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "At building",
+    "last_modified": "2015-12-03T08:40:45+00:00",
+    "created": "2015-11-25T01:44:19+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "4078673": {
+    "id": 4078673,
+    "parent_id": 3595505,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Carpet cleaning",
+    "last_modified": "2015-12-14T22:18:19+00:00",
+    "created": "2015-12-14T22:18:19+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3911361": {
+    "id": 3911361,
+    "parent_id": 3595505,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Deep Clean",
+    "last_modified": "2015-12-08T05:34:34+00:00",
+    "created": "2015-12-08T05:34:34+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595523": {
+    "id": 3595523,
+    "parent_id": 3595505,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Entrances",
+    "last_modified": "2015-12-09T04:19:06+00:00",
+    "created": "2015-11-25T01:44:59+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595511": {
+    "id": 3595511,
+    "parent_id": 3595505,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": true,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Kitchen",
+    "last_modified": "2015-12-03T08:40:45+00:00",
+    "created": "2015-11-25T01:44:19+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3958757": {
+    "id": 3958757,
+    "parent_id": 3595505,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": true,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Restrooms",
+    "last_modified": "2015-12-09T04:19:20+00:00",
+    "created": "2015-12-09T04:19:20+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3986857": {
+    "id": 3986857,
+    "parent_id": 3595505,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Shipping",
+    "last_modified": "2015-12-10T04:19:05+00:00",
+    "created": "2015-12-10T04:19:05+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595517": {
+    "id": 3595517,
+    "parent_id": 3595505,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Surfaces",
+    "last_modified": "2015-12-03T08:40:45+00:00",
+    "created": "2015-11-25T01:44:19+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595509": {
+    "id": 3595509,
+    "parent_id": 3595505,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Trash",
+    "last_modified": "2015-12-03T08:40:45+00:00",
+    "created": "2015-11-25T01:44:19+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   }
+  }
+ },
+ "more": true,
+ "supplemental_data": {
+  "jobcodes": {
+   "3491253": {
+    "id": 3491253,
+    "parent_id": 0,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": true,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Administrative",
+    "last_modified": "2015-11-22T01:02:18+00:00",
+    "created": "2015-11-22T01:02:18+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3505537": {
+    "id": 3505537,
+    "parent_id": 0,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": true,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Building 20",
+    "last_modified": "2015-12-03T08:40:18+00:00",
+    "created": "2015-11-23T04:45:43+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595487": {
+    "id": 3595487,
+    "parent_id": 0,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": true,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Building 556",
+    "last_modified": "2015-12-03T08:40:32+00:00",
+    "created": "2015-11-25T01:42:06+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595493": {
+    "id": 3595493,
+    "parent_id": 3595487,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": true,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Kitchen",
+    "last_modified": "2015-12-03T08:40:32+00:00",
+    "created": "2015-11-25T01:43:22+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595505": {
+    "id": 3595505,
+    "parent_id": 0,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": true,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Building 583",
+    "last_modified": "2015-12-03T08:40:45+00:00",
+    "created": "2015-11-25T01:44:19+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   }
+  }
+ }
+}

@@ -1,0 +1,17 @@
+{
+    "contents" : "y=x\nf = outer (x ,y , function (x , y ) cos ( y ) /(1+ x ^2) )\ncontour (x ,y , f )\ncontour (x ,y ,f , nlevels =45 , add = T )\nfa =( f - t ( f ) ) /2\ncontour (x ,y , fa , nlevels =15)\n",
+    "created" : 1436660637548.000,
+    "dirty" : true,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "4033156961",
+    "id" : "44AC9DCD",
+    "lastKnownWriteTime" : 176093659229,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

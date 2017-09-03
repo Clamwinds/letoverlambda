@@ -1,0 +1,7 @@
+{
+  "generator-springworks": {
+    "projectName": "hubot tsheets",
+    "projectDescription": "TSheets integration for a Hubot",
+    "privateProject": false
+  }
+}

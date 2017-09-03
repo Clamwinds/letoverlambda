@@ -1,0 +1,6 @@
+"2015-11-16 through 2015-11-30, Job Code Type: all (Grouped by jobcode)"
+"job_code","hours",Total
+"Administrative","5.39",5.39
+"Cleaning Technician","9.58",9.58
+"Shift Total","1.50",1.5
+"Grand Totals:",,=SUM(C2:C5)

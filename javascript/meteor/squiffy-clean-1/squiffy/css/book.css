@@ -1,0 +1,85 @@
+
+.totalsqFtCol { text-align: left; line-height: 2.7;}
+
+.estimCol { text-align: right;}
+
+.totalsqFtCol, .estimCol { height: 40px;}
+
+.mediumText { font-size: 15px;}
+
+.smallText { font-size: 0.7rem; color: #595959;}
+
+#bookSection1 .column { padding-left: 0; padding-right: 0;}
+#bookSection1 .row, #bookSection1.row.row { margin-left: 0; margin-right:0;}
+
+#bookSection1 .pageTitle {
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+}
+
+.refrigeratorsSection {
+	margin-top: 2rem;
+}
+
+.refrigeratorsSection hr { margin: 0.6rem auto;}
+
+#bookSection1 .contentBox, #bookSection2 .contentBox { padding: 2rem; }
+
+.bigEstimate {
+    color: #5aa3e8;
+    font-size: 25px;
+    letter-spacing: 1.2px;
+    font-weight: bold;
+    padding-left: 0.4rem;
+    padding-right: 0.3rem;
+}
+
+.refrigSectionTitle { margin-bottom: 1.5rem;}
+
+
+input.refrigNum {
+	margin: 0;
+	line-height:1.5;
+	height: 20px;
+    max-width: 40px;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+.fridCleanFreq .smallText, .fridCleanFreq .ui-spinner { display: inline-block;}
+
+.fridCleanFreq .smallText { margin-right: 0.5rem;}
+
+.refrigDescr { padding-left: 0.3rem;}
+
+#bookSection1 .bodyContent .buttonWrapper {
+	margin-top: 4rem;
+}
+
+#bookSection1 .btnSmall { margin-left:0;}
+
+.row.serviceRow { margin-bottom: 1.2rem; font-size: 15px;}
+.row.serviceRow .column { padding-left: 0; padding-right: 0;}
+.row.serviceRow .column.serviceDescrCol { padding-right: 0.5rem;}
+
+.additionalServicesSection .smallPageTitle, .supplyManagementSection .smallPageTitle { margin-bottom: 1.6rem;}
+
+.supplyManagementSection { margin-top: 2rem;}
+
+.paragraph2 { margin-top: 2rem; margin-bottom: 4rem;}
+
+.paragraph1, .paragraph2 {
+    text-align: justify;
+    max-width: 700px;
+} 
+
+/* Hide add button from other services section for now!!! */
+#bookSection2 .addBtn { display: none;}
+
+
+
+@media only screen and (max-width: 40em) { 
+
+	.estimCol { text-align: left;}
+}
+

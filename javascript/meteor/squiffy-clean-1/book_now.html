@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html class="" lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SquiffyClean</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/font-awesome-4.5.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/book.css">
+
+</head>    
+
+<style>
+</style>
+
+<body>
+
+    <!-- +++++++++++ -->
+    <!--   Top Bar   -->
+    <!-- +++++++++++ -->
+	<div class="top-bar">
+	  <div class="top-bar-title">
+	    <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
+	      <span class="menu-icon dark" data-toggle></span>
+	      <span><img src="img/logo.png" class="logo"></span>
+	    </span>
+	  </div>
+	  <div id="responsive-menu">
+	    <div class="top-bar-left">
+	    </div>
+	    <div class="top-bar-right">
+	      <ul class="menu">
+            <li class="right"><a href="http://www.dashup.co/about-us.html">About</a></li>
+            <li class="right"><a href="#" class="navSelected">Get your Price</a></li>
+            <li class="right"><a href="http://www.dashup.co/careers.html">Careers</a></li>
+            <li class="right"><a href="http://www.dashup.co/faq.html">FAQ</a></li>
+	      </ul>
+	    </div>
+	  </div>
+	</div>
+
+
+    <!-- ++++++++++++++ -->
+    <!--  Body Content  -->
+    <!-- ++++++++++++++ -->
+	<div class="bodySection" id="bookSection1">
+
+        <div class="bodyContent" id="content">
+
+            <div class="contentBox leftAlignment">
+
+                <div class="contentWrapper">    
+                    <div class="row headerSection show-for-small-only">
+                       <div class="small-12 medium-7 large-6 column estimCol">Est<span class="bigEstimate">$<span class="estNum">2,591</span></span><span>(per calendar month)</span>
+                        </div>
+                       <div class="small-12 medium-5 large-6 column totalsqFtCol">Total 6000 sq Ft
+                        </div>
+                    </div>
+                    <div class="row headerSection hide-for-small-only">
+                       <div class="small-12 medium-5 large-6 column totalsqFtCol">Total 6000 sq Ft
+                        </div>
+                       <div class="small-12 medium-7 large-6 column estimCol">Est<span class="bigEstimate">$<span class="estNum">2,591</span></span><span>(per calendar month)</span>
+                        </div>
+                    </div>
+
+
+                    <div class="row itemizedSection smallText">
+                    </div>                    
+                    <div class="refrigeratorsSection">                    
+                        <div class="row refrigSectionTitle">
+                            <div class="smallPageTitle">Refrigerators</div>
+                        </div>  
+                        <div class="row refrigDetailsRow"> 
+                            <div class="small-4 medium-3 column"><span class="refrigType">Small</span><span class="smallText refrigDescr">(up to 7 cu Ft)</span></div>
+                            <div class="small-2 medium-2 column">$<span class="servCost">240</span></div>  
+                            <div class="small-4 medium-3 large-2 column fridCleanFreq">
+                                <span class="smallText">weekly</span><input type="number" min="1" max="" step="1" class="refrigNum" />
+                            </div>    
+                            <div class="small-2 medium-1 column end">
+                                <a href="#" class="btn btnSmall addBtn" onclick="addRefrig($(this).closest('.refrigDetailsRow'));">Add</a> 
+                            </div>     
+                        </div>
+                        <div class="row refrigDetailsRow"> 
+                            <div class="small-12 medium-8 column"><hr/></div>
+                        </div>    
+                        <div class="row refrigDetailsRow"> 
+                            <div class="small-4 medium-3 column"><span class="refrigType">Large</span><span class="smallText refrigDescr">(up to 35 cu Ft)</span></div>
+                            <div class="small-2 medium-2 column">$<span class="servCost">360</span></div>  
+                            <div class="small-4  medium-3 large-2 column fridCleanFreq">
+                                <span class="smallText">weekly</span><input type="number" min="1" max="" step="1" class="refrigNum"/>
+                            </div>    
+                            <div class="small-2 medium-1 column end">
+                                <a href="#" class="btn btnSmall addBtn" onclick="addRefrig($(this).closest('.refrigDetailsRow'));">Add</a> 
+                            </div>     
+                        </div>
+
+  
+                    </div>    
+                </div>    
+
+                <div class="row buttonWrapper">
+                    <a href="javascript:void(0)" class="btn sendBtn" onclick="bookNow();">Book Now</a>
+                </div>    
+
+            </div>    
+  
+        </div>    
+	</div>	
+
+
+    <div class="bodySection" id="bookSection2">
+
+        <div class="bodyContent" id="content">
+
+            <div class="contentBox leftAlignment">
+
+                <div class="contentWrapper">    
+
+                    <div class="additionalServicesSection mediumText">
+                        <div class="smallPageTitle">Additional Services</div>
+
+                        <div class="row serviceRow"> 
+                            <div class="small-7 medium-6 column serviceDescrCol">Spot clean carpet spills or stains</div>
+                            <div class="small-3 medium-3 column">$20 <span class="smallText">each</span></div>  
+                            <div class="small-2 medium-1 column end">
+                                <a href="#" class="btn btnSmall addBtn">Add</a> 
+                            </div>     
+                        </div>
+                        <div class="row serviceRow"> 
+                            <div class="small-7 medium-6 column serviceDescrCol">Small office chair <span class="smallText">(only has a fabric seat)</span></div>
+                            <div class="small-3 medium-3 column">$<span class="servCost">8 </span><span class="smallText">each</span></div>  
+                            <div class="small-2 medium-1 column end">
+                                <a href="#" class="btn btnSmall addBtn">Add</a> 
+                            </div>     
+                        </div>
+                        <div class="row serviceRow"> 
+                            <div class="small-7 medium-6 column serviceDescrCol">Large office chair <span class="smallText">includes the seat, back and armrests)</span></div>
+                            <div class="small-3 medium-3 column">$<span class="servCost">8 </span><span class="smallText">each</span></div>  
+                            <div class="small-2 medium-1 column end">
+                                <a href="#" class="btn btnSmall addBtn">Add</a> 
+                            </div>     
+                        </div>
+                        <div class="row serviceRow"> 
+                            <div class="small-7 medium-6 column serviceDescrCol">2-seater fabric couch <span class="smallText">(only has a fabric seat)</span></div>
+                            <div class="small-3 medium-3 column">$<span class="servCost">40 </span><span class="smallText">each</span></div>  
+                            <div class="small-2 medium-1 column end">
+                                <a href="#" class="btn btnSmall addBtn">Add</a> 
+                            </div>     
+                        </div>
+                        <div class="row serviceRow"> 
+                            <div class="small-7 medium-6 column serviceDescrCol">3 or more seater fabric couch <span class="smallText">(only has a fabric seat)</span></div>
+                            <div class="small-3 medium-3 column">$<span class="servCost">75 </span><span class="smallText">each</span></div>  
+                            <div class="small-2 medium-1 column end">
+                                <a href="#" class="btn btnSmall addBtn">Add</a> 
+                            </div>     
+                        </div>
+                        <div class="row serviceRow"> 
+                            <div class="small-7 medium-6 column serviceDescrCol">Flood / Emergency Cleanup</div>
+                            <div class="small-3 medium-3 column">$<span class="servCost">75 </span><span class="smallText">/hour (includes two people)</span></div>  
+                            <div class="small-2 medium-1 column end">
+                                <a href="#" class="btn btnSmall addBtn">Add</a> 
+                            </div>     
+                        </div>
+
+
+                    </div>
+                    <div class="supplyManagementSection mediumText">    
+                        <div class="smallPageTitle">Supply Management</div>
+                        <div class="paragraph1">
+                        We also restock the following on a daily basis: coffee, coffee filters, creamers, sweetners, tea, stirrers, hot cups and cold cups, paper plates and bowls, napkins, forks, knives, Spoons.    
+                        </div>  
+                        <div class="paragraph2">
+                        During your walkthrough, you’ll review and customize your services with our representative so that you have everything you need    
+                        </div>  
+                    </div>    
+               </div>    
+
+            </div>    
+  
+        </div>  
+        <div class="buttonWrapper">
+            <a href="javascript:void(0)" class="btn sendBtn" onclick="bookNow();">Book Now</a>
+        </div>    
+  
+    </div>  
+
+
+    <!-- +++++++++++++++++++++++++++++++++++++++ -->
+    <!--  Modal window for confirmation message  -->
+    <!-- +++++++++++++++++++++++++++++++++++++++ -->
+    <div class="reveal" id="confirmationWindow" data-reveal>
+        <div id="confirmMsg">Thank you! Please check your inbox. See you soon :)</div>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <!-- +++++++++++++++++++++++++++++++++++++++ -->
+    <!--  Modal window for error message         -->
+    <!-- +++++++++++++++++++++++++++++++++++++++ -->
+    <div class="reveal" id="errorWindow" data-reveal>
+        <div id="errorMsg"></div>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+
+    <!-- +++++++++++ -->
+    <!--   Footer    -->
+    <!-- +++++++++++ -->
+    <div id="footerSection">
+    </div>    
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/book.js"></script>
+
+    <script>
+
+    $(document).ready(function(){
+
+        $("#footerSection").load("footer.html"); 
+    });    
+
+    </script>
+
+</body>
+
+</html> 	 

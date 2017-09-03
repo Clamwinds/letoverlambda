@@ -1,0 +1,24 @@
+"2015-11-16 through 2015-11-30, Job Code Type: all (Grouped by jobcode)"
+"job_code","hours",Total
+"Administrative","7.38",7.38
+"Building 20 >> Depart the building","0.16",0.16
+"Building 20 >> Entrances & stairs","0.00",0
+"Building 20 >> Kitchen: bar","0.02",0.02
+"Building 20 >> Kitchen: left","0.11",0.11
+"Building 20 >> Surfaces","0.66",0.66
+"Building 20 >> Trash","1.53",1.53
+"Building 20 >> Walk-through","0.19",0.19
+"Building 556 >> Depart the building","0.28",0.28
+"Building 556 >> Kitchen","0.24",0.24
+"Building 556 >> Restroom: Men's","0.08",0.08
+"Building 556 >> Restroom: Women's","0.13",0.13
+"Building 556 >> Walk-through","0.38",0.38
+"Cleaning Technician","9.58",9.58
+"Clock in","3.00",3
+"Hacker Dojo >> Depart the building","0.27",0.27
+"Hacker Dojo >> Vacuum","0.08",0.08
+"Hacker Dojo >> Walk-through","1.37",1.37
+"Home cleaning >> Restroom: Men's","0.00",0
+"Home cleaning >> Restroom: Women's","0.28",0.28
+"Shift Total","1.75",1.75
+"Grand Totals:",,=SUM(C2:C23)

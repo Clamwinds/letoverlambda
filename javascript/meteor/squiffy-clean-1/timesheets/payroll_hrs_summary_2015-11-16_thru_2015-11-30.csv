@@ -1,0 +1,6 @@
+"Payroll ID","Employee Number","Name","Group","Salaried","Exempt","Reg Hours","O/T Hours","D/T Hours","Holiday Hours","Sick Hours","Vacation Hours","Approval State"
+"","10","Simard, Liam","Service Crew","0","0","16.47","0.00","0.00","0.00","0.00","0.00","no"
+,,SUBTOTAL,,,,=SUM(G2:G2),=SUM(H2:H2),=SUM(I2:I2),=SUM(J2:J2),=SUM(K2:K2),=SUM(L2:L2)
+
+
+,,GRAND TOTAL,,,,"=SUM(G3,G1)","=SUM(H3,H1)","=SUM(I3,I1)","=SUM(J3,J1)","=SUM(K3,K1)","=SUM(L3,L1)"

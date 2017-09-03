@@ -1,0 +1,162 @@
+/* Styling for pricing.html page */
+
+.buildingSection { margin-top: 3rem;}
+
+
+.bldgName, .bldgSectionHeader input[type='text'].zipCodeInput { 
+	display: inline-block;	
+}
+
+.bldgName { margin-right: 1rem; font-size: 16px;}
+
+input[type='text'].zipCodeInput, input[type='text'].emailAddrInput { 
+	text-align: center;
+	border-radius: 8px;
+	font-size: 14px;
+}
+
+input[type='text'].zipCodeInput {
+    max-width:180px;    
+}
+
+
+.sqftOptHeaderRow {
+	margin-bottom: 1.5rem;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+.sqftOptRow {
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+.sqftCol1.columns { text-align:left;}
+
+.sqftCol1RowWrapper {     
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sqftCol2RowWrapper {
+    text-align: center;
+}
+
+input[type='text'].sqftInput {
+	max-width:130px;
+	max-height: 30px;
+	text-align: center;
+	border-radius: 8px;
+	font-size: 13px;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+
+.addAnotherBldgWrapper { margin-top: 0.8rem;}
+.addAnotherBldgLink {font-size: 13px;}
+
+/* ---------- */
+/* Content 2  */ 
+/* ---------- */
+.contentWrapper { 
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;    
+    font-size: 14px;
+}
+.bldgNumRow { margin-bottom: 0.5rem;}
+
+.detailsRow { margin-bottom: 2rem;}
+
+.detailsRow .column, .totalRow .column { 
+    padding-left: 0; 
+    padding-right: 0;
+}
+
+.detailsRow .column.sqftNum, .totalRow .column.sqftNum {
+    text-align: right;
+    padding-right: 0.3rem;
+} 
+.detailsRow .column.sqftLabel, .totalRow .column.sqftLabel {
+    padding-left: 0.2rem;
+}
+
+.frequencyCol { margin-right: 0.5rem;}
+
+.frequencyDropdown { 
+    font-size: 0.9rem;
+    padding: 0.2rem;
+    height: 25px;
+    border-radius: 8px;
+    pointer-events: auto;
+}
+.detailsRow .column.sqftNum { height: 25px;}
+
+select.frequencyDropdown:disabled {
+    background-color: #ffffff;
+    border: none;
+    background-image: none;
+    pointer-events: none; /* Will not trigger events on the select but it will on any parent element */ 
+}
+
+/* Email section */
+
+.emailSection {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    background-color: #e9e9e9;
+    padding: 1rem 1rem 1rem 1rem;
+    border: 1px solid #cacaca;
+}
+
+input[type='text'].emailAddrInput {
+    max-width: 250px;
+}
+
+input[type='text']#emailAddrInput2 {
+    margin-bottom: 0;
+}
+
+p.errorMsg {
+    font-style: italic;
+    font-size: 90%;
+    color: #ec5840;
+    margin-bottom: 0;
+    margin-top: 0.3rem;
+}
+
+
+/* ----------- */
+/*  Edit Sqft  */
+/* ----------- */
+.editable {
+    border-radius: 8px;
+    border: 1px solid #cacaca;
+}
+
+.notEditable {
+    border: none;
+}
+
+
+@media only screen and (max-width: 40em) { 
+
+    .detailsRow { padding-left: 0;}
+    .buildingSection { margin-top: 1.5rem;}
+    .bldgName { font-size: 15px;}
+    input[type='text'].sqftInput { max-width: 110px;}
+    [type='radio'] + label { margin-right: 0.5rem;}
+}
+
+/* Smaller smart phones */ 
+@media only screen and (max-width: 320px) { 
+
+    .sqftOptHeaderRow { font-size: 13px;}
+    .sqftOptHeaderRow .sqftCol1, .sqftCol1 label { font-size: 0.8rem;}
+    .bodySection { padding: 1rem 1.1rem;}
+    input[type='text'].sqftInput { max-width: 80px; margin-right: 0;}
+    input[type='text'].zipCodeInput { max-width: 175px;}
+    .sqftCol2RowWrapper {text-align: right;}
+}
+

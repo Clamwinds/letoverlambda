@@ -1,0 +1,2470 @@
+{
+ "results": {
+  "project_report": {
+   "filters": {
+    "user_ids": [
+     
+    ],
+    "group_ids": [
+     
+    ],
+    "start_date": "2015-11-24",
+    "end_date": "2015-12-22",
+    "jobcode_type": "all",
+    "customfielditems": [
+     
+    ],
+    "jobcode_ids": null
+   },
+   "totals": {
+    "users": {
+     "160678": "82.43",
+     "160666": "77.38",
+     "159425": "8.42",
+     "160680": "66.02",
+     "160674": "16.86",
+     "159428": "105.79",
+     "159430": "148.21"
+    },
+    "groups": {
+     "10280": 390.9,
+     "0": 114.21
+    },
+    "jobcodes": {
+     "3491253": "95.67",
+     "3636141": "14.78",
+     "3595539": "34.66",
+     "3595501": "12.93",
+     "3595519": "16.79",
+     "3595477": "51.93",
+     "3958795": "1.01",
+     "3958797": "0.63",
+     "3958877": "1.87",
+     "4078667": "0.32",
+     "3958767": "1.34",
+     "3958771": "1.78",
+     "3958843": "2.57",
+     "4127198": "1.01",
+     "3911357": "2.42",
+     "3911365": "0.19",
+     "3911363": "2.06",
+     "3911359": "1.44",
+     "3911361": "2.37",
+     "3636123": "0.27",
+     "3636119": "0.34",
+     "3636117": "0.40",
+     "3595523": "0.85",
+     "3595475": "2.71",
+     "3595543": "5.51",
+     "4045703": "0.88",
+     "4127200": "9.62",
+     "4127196": "4.68",
+     "3595493": "0.65",
+     "3595531": "1.94",
+     "3595511": "0.24",
+     "3595449": "0.55",
+     "3595445": "0.67",
+     "3595447": "0.71",
+     "3958823": "1.10",
+     "3958825": "0.25",
+     "3958787": "1.17",
+     "3958789": "0.47",
+     "3986845": "0.13",
+     "3958815": "1.27",
+     "3958807": "0.32",
+     "3958805": "0.72",
+     "3958817": "0.21",
+     "3636137": "1.25",
+     "3958875": "11.92",
+     "3958759": "0.82",
+     "3958849": "1.00",
+     "3958833": "2.95",
+     "3958777": "0.93",
+     "3958851": "0.29",
+     "3958835": "1.07",
+     "3958779": "0.49",
+     "3958763": "0.29",
+     "3958769": "0.40",
+     "3958845": "0.84",
+     "3958773": "0.85",
+     "3986859": "1.72",
+     "3595463": "0.35",
+     "3595465": "0.18",
+     "3595471": "0.19",
+     "3595469": "0.31",
+     "3595467": "0.13",
+     "3595513": "0.14",
+     "3595533": "0.93",
+     "3636135": "0.21",
+     "3595495": "0.59",
+     "3595453": "0.32",
+     "3595461": "0.13",
+     "3636139": "0.38",
+     "3595535": "0.52",
+     "3595497": "0.73",
+     "3595515": "0.08",
+     "3958791": "2.06",
+     "3958793": "0.49",
+     "3986847": "0.20",
+     "3958809": "1.42",
+     "3958819": "0.34",
+     "3958811": "0.84",
+     "3958821": "0.29",
+     "3958813": "0.59",
+     "3986861": "2.06",
+     "3986849": "0.28",
+     "3958827": "0.72",
+     "3958829": "0.24",
+     "3595483": "16.10",
+     "3595517": "2.40",
+     "3595473": "17.01",
+     "3595537": "5.30",
+     "3595499": "3.80",
+     "3595529": "14.21",
+     "3595509": "7.69",
+     "3595443": "18.29",
+     "3595491": "3.53",
+     "3660741": "38.46",
+     "4127192": "2.24",
+     "3595527": "3.75",
+     "3595489": "3.71",
+     "3595439": "11.85",
+     "3595507": "1.90",
+     "3636316": "0.42",
+     "3595521": "1.78",
+     "3595503": "4.05",
+     "3595541": "4.94",
+     "3595479": "10.13",
+     "3958837": "2.29",
+     "3958781": "1.03",
+     "3958761": "0.90",
+     "3958855": "1.09",
+     "3958839": "0.65",
+     "3958783": "0.57",
+     "3958765": "0.26",
+     "3958853": "0.24",
+     "0": "5.60"
+    },
+    "customfields": [
+     
+    ]
+   }
+  }
+ },
+ "supplemental_data": {
+  "users": {
+   "160678": {
+    "id": 160678,
+    "first_name": "Mariel",
+    "last_name": "Becerra",
+    "group_id": 10280,
+    "active": true,
+    "employee_number": 0,
+    "salaried": false,
+    "exempt": false,
+    "username": "marielbecerra",
+    "email": "mariel_gmz@yahoo.com",
+    "payroll_id": "",
+    "hire_date": "0000-00-00",
+    "term_date": "0000-00-00",
+    "last_modified": "2015-12-21T05:12:28+00:00",
+    "last_active": "2015-12-24T05:21:09+00:00",
+    "created": "2015-11-09T21:08:38+00:00",
+    "client_url": "squiffyclean",
+    "company_name": "Squiffy Clean, Inc",
+    "mobile_number": "",
+    "pto_balances": "",
+    "approved_to": "2015-11-16",
+    "submitted_to": "2015-11-16",
+    "manager_of_group_ids": [
+     
+    ],
+    "require_password_change": true,
+    "permissions": {
+     "admin": false,
+     "mobile": true,
+     "status_box": false,
+     "reports": false,
+     "manage_timesheets": false,
+     "manage_authorization": false,
+     "manage_users": false,
+     "manage_my_timesheets": false,
+     "manage_jobcodes": false,
+     "approve_timesheets": false
+    }
+   },
+   "160666": {
+    "id": 160666,
+    "first_name": "Kimberley",
+    "last_name": "Beltran",
+    "group_id": 10280,
+    "active": true,
+    "employee_number": 0,
+    "salaried": false,
+    "exempt": false,
+    "username": "kimbeltran",
+    "email": "kimbeltran70@yahoo.com",
+    "payroll_id": "",
+    "hire_date": "0000-00-00",
+    "term_date": "0000-00-00",
+    "last_modified": "2015-12-21T05:02:42+00:00",
+    "last_active": "2015-12-24T05:21:10+00:00",
+    "created": "2015-11-09T21:04:12+00:00",
+    "client_url": "squiffyclean",
+    "company_name": "Squiffy Clean, Inc",
+    "mobile_number": "",
+    "pto_balances": "",
+    "approved_to": "2015-11-16",
+    "submitted_to": "2015-11-16",
+    "manager_of_group_ids": [
+     
+    ],
+    "require_password_change": false,
+    "permissions": {
+     "admin": false,
+     "mobile": true,
+     "status_box": false,
+     "reports": false,
+     "manage_timesheets": false,
+     "manage_authorization": false,
+     "manage_users": false,
+     "manage_my_timesheets": false,
+     "manage_jobcodes": false,
+     "approve_timesheets": false
+    }
+   },
+   "159425": {
+    "id": 159425,
+    "first_name": "Simon",
+    "last_name": "Brooks",
+    "group_id": 0,
+    "active": true,
+    "employee_number": 0,
+    "salaried": false,
+    "exempt": false,
+    "username": "simonbrooks",
+    "email": "simon@squiffyclean.com",
+    "payroll_id": "",
+    "hire_date": "0000-00-00",
+    "term_date": "0000-00-00",
+    "last_modified": "2015-12-11T10:13:26+00:00",
+    "last_active": "2015-12-24T05:01:58+00:00",
+    "created": "2015-11-09T05:42:52+00:00",
+    "client_url": "squiffyclean",
+    "company_name": "Squiffy Clean, Inc",
+    "mobile_number": "",
+    "pto_balances": "",
+    "approved_to": "2015-11-16",
+    "submitted_to": "2015-11-16",
+    "manager_of_group_ids": [
+     10280
+    ],
+    "require_password_change": false,
+    "permissions": {
+     "admin": true,
+     "mobile": true,
+     "status_box": true,
+     "reports": true,
+     "manage_timesheets": true,
+     "manage_authorization": true,
+     "manage_users": true,
+     "manage_my_timesheets": true,
+     "manage_jobcodes": true,
+     "approve_timesheets": true
+    }
+   },
+   "160680": {
+    "id": 160680,
+    "first_name": "Maribel",
+    "last_name": "Medina",
+    "group_id": 10280,
+    "active": true,
+    "employee_number": 0,
+    "salaried": false,
+    "exempt": false,
+    "username": "maribelmedina",
+    "email": "mm8932814@gmail.com",
+    "payroll_id": "",
+    "hire_date": "0000-00-00",
+    "term_date": "0000-00-00",
+    "last_modified": "2015-12-06T06:06:50+00:00",
+    "last_active": "2015-12-22T20:03:32+00:00",
+    "created": "2015-11-09T21:10:21+00:00",
+    "client_url": "squiffyclean",
+    "company_name": "Squiffy Clean, Inc",
+    "mobile_number": "",
+    "pto_balances": "",
+    "approved_to": "2015-11-16",
+    "submitted_to": "2015-11-16",
+    "manager_of_group_ids": [
+     
+    ],
+    "require_password_change": true,
+    "permissions": {
+     "admin": false,
+     "mobile": true,
+     "status_box": false,
+     "reports": false,
+     "manage_timesheets": false,
+     "manage_authorization": false,
+     "manage_users": false,
+     "manage_my_timesheets": false,
+     "manage_jobcodes": false,
+     "approve_timesheets": false
+    }
+   },
+   "160674": {
+    "id": 160674,
+    "first_name": "Veronica",
+    "last_name": "Rivas",
+    "group_id": 10280,
+    "active": false,
+    "employee_number": 0,
+    "salaried": false,
+    "exempt": false,
+    "username": "veronicarivas",
+    "email": "rivas.veronica.rivas@gmail.com",
+    "payroll_id": "",
+    "hire_date": "0000-00-00",
+    "term_date": "0000-00-00",
+    "last_modified": "2015-12-05T03:17:19+00:00",
+    "last_active": "2015-12-03T11:01:37+00:00",
+    "created": "2015-11-09T21:07:06+00:00",
+    "client_url": "squiffyclean",
+    "company_name": "Squiffy Clean, Inc",
+    "mobile_number": "",
+    "pto_balances": "",
+    "approved_to": "2015-11-16",
+    "submitted_to": "2015-11-16",
+    "manager_of_group_ids": [
+     
+    ],
+    "require_password_change": false,
+    "permissions": {
+     "admin": false,
+     "mobile": false,
+     "status_box": false,
+     "reports": false,
+     "manage_timesheets": false,
+     "manage_authorization": false,
+     "manage_users": false,
+     "manage_my_timesheets": false,
+     "manage_jobcodes": false,
+     "approve_timesheets": false
+    }
+   },
+   "159428": {
+    "id": 159428,
+    "first_name": "Liam",
+    "last_name": "Simard",
+    "group_id": 0,
+    "active": true,
+    "employee_number": 10,
+    "salaried": false,
+    "exempt": false,
+    "username": "liamsimard",
+    "email": "las477@cornell.edu",
+    "payroll_id": "",
+    "hire_date": "0000-00-00",
+    "term_date": "0000-00-00",
+    "last_modified": "2015-12-22T21:31:46+00:00",
+    "last_active": "2015-12-24T05:15:57+00:00",
+    "created": "2015-11-09T05:51:31+00:00",
+    "client_url": "squiffyclean",
+    "company_name": "Squiffy Clean, Inc",
+    "mobile_number": "",
+    "pto_balances": "",
+    "approved_to": "2015-11-16",
+    "submitted_to": "2015-11-16",
+    "manager_of_group_ids": [
+     10280
+    ],
+    "require_password_change": false,
+    "permissions": {
+     "admin": true,
+     "mobile": true,
+     "status_box": true,
+     "reports": true,
+     "manage_timesheets": true,
+     "manage_authorization": true,
+     "manage_users": true,
+     "manage_my_timesheets": true,
+     "manage_jobcodes": true,
+     "approve_timesheets": true
+    }
+   },
+   "159430": {
+    "id": 159430,
+    "first_name": "Eduardo",
+    "last_name": "Torres",
+    "group_id": 10280,
+    "active": true,
+    "employee_number": 11,
+    "salaried": false,
+    "exempt": false,
+    "username": "eduardotorres",
+    "email": "eduardotorres2010@gmail.com",
+    "payroll_id": "",
+    "hire_date": "0000-00-00",
+    "term_date": "0000-00-00",
+    "last_modified": "2015-12-12T06:32:05+00:00",
+    "last_active": "2015-12-24T05:21:10+00:00",
+    "created": "2015-11-09T05:55:57+00:00",
+    "client_url": "squiffyclean",
+    "company_name": "Squiffy Clean, Inc",
+    "mobile_number": "",
+    "pto_balances": "",
+    "approved_to": "2015-11-16",
+    "submitted_to": "2015-11-16",
+    "manager_of_group_ids": [
+     10280
+    ],
+    "require_password_change": false,
+    "permissions": {
+     "admin": false,
+     "mobile": true,
+     "status_box": false,
+     "reports": false,
+     "manage_timesheets": false,
+     "manage_authorization": false,
+     "manage_users": false,
+     "manage_my_timesheets": true,
+     "manage_jobcodes": false,
+     "approve_timesheets": false
+    }
+   }
+  },
+  "groups": {
+   "10280": {
+    "id": 10280,
+    "active": true,
+    "name": "Service Crew",
+    "last_modified": "2015-12-03T04:47:50+00:00",
+    "created": "2015-11-09T05:52:22+00:00",
+    "manager_ids": [
+     "159425",
+     "159428",
+     "159430"
+    ]
+   }
+  },
+  "jobcodes": {
+   "3491253": {
+    "id": 3491253,
+    "parent_id": 0,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": true,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Administrative",
+    "last_modified": "2015-11-22T01:02:18+00:00",
+    "created": "2015-11-22T01:02:18+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3636141": {
+    "id": 3636141,
+    "parent_id": 3636133,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "At building",
+    "last_modified": "2015-12-03T08:50:40+00:00",
+    "created": "2015-11-26T02:57:13+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595539": {
+    "id": 3595539,
+    "parent_id": 3595525,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "At building",
+    "last_modified": "2015-12-03T08:50:05+00:00",
+    "created": "2015-11-25T01:45:36+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595501": {
+    "id": 3595501,
+    "parent_id": 3595487,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "At building",
+    "last_modified": "2015-12-03T08:40:32+00:00",
+    "created": "2015-11-25T01:43:55+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595519": {
+    "id": 3595519,
+    "parent_id": 3595505,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "At building",
+    "last_modified": "2015-12-03T08:40:45+00:00",
+    "created": "2015-11-25T01:44:19+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595477": {
+    "id": 3595477,
+    "parent_id": 3505537,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "At building",
+    "last_modified": "2015-12-03T08:40:19+00:00",
+    "created": "2015-11-25T01:40:29+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3958795": {
+    "id": 3958795,
+    "parent_id": 3958785,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Bar: cleaning",
+    "last_modified": "2015-12-09T04:24:18+00:00",
+    "created": "2015-12-09T04:24:18+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3958797": {
+    "id": 3958797,
+    "parent_id": 3958785,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Bar: mopping",
+    "last_modified": "2015-12-09T04:24:24+00:00",
+    "created": "2015-12-09T04:24:24+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3958877": {
+    "id": 3958877,
+    "parent_id": 0,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Break",
+    "last_modified": "2015-12-21T03:24:29+00:00",
+    "created": "2015-12-09T04:49:01+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "4078667": {
+    "id": 4078667,
+    "parent_id": 3505537,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Carpet cleaning",
+    "last_modified": "2015-12-14T22:17:34+00:00",
+    "created": "2015-12-14T22:17:34+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3958767": {
+    "id": 3958767,
+    "parent_id": 3595511,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Cleaning",
+    "last_modified": "2015-12-09T04:20:36+00:00",
+    "created": "2015-12-09T04:20:36+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3958771": {
+    "id": 3958771,
+    "parent_id": 3595493,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Cleaning",
+    "last_modified": "2015-12-09T04:21:14+00:00",
+    "created": "2015-12-09T04:21:14+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3958843": {
+    "id": 3958843,
+    "parent_id": 3958841,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Cleaning",
+    "last_modified": "2015-12-09T04:29:52+00:00",
+    "created": "2015-12-09T04:29:52+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "4127198": {
+    "id": 4127198,
+    "parent_id": 3491253,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Daily\/weekly job sheets",
+    "last_modified": "2015-12-17T07:28:27+00:00",
+    "created": "2015-12-17T07:28:27+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3911357": {
+    "id": 3911357,
+    "parent_id": 3505537,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Deep Clean",
+    "last_modified": "2015-12-08T05:34:10+00:00",
+    "created": "2015-12-08T05:34:10+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3911365": {
+    "id": 3911365,
+    "parent_id": 3636133,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Deep Clean",
+    "last_modified": "2015-12-08T05:34:52+00:00",
+    "created": "2015-12-08T05:34:52+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3911363": {
+    "id": 3911363,
+    "parent_id": 3595525,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Deep Clean",
+    "last_modified": "2015-12-08T05:34:43+00:00",
+    "created": "2015-12-08T05:34:43+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3911359": {
+    "id": 3911359,
+    "parent_id": 3595487,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Deep Clean",
+    "last_modified": "2015-12-08T05:34:24+00:00",
+    "created": "2015-12-08T05:34:24+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3911361": {
+    "id": 3911361,
+    "parent_id": 3595505,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Deep Clean",
+    "last_modified": "2015-12-08T05:34:34+00:00",
+    "created": "2015-12-08T05:34:34+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3636123": {
+    "id": 3636123,
+    "parent_id": 3595525,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": false,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Depart the building",
+    "last_modified": "2015-11-30T08:46:14+00:00",
+    "created": "2015-11-26T02:52:32+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3636119": {
+    "id": 3636119,
+    "parent_id": 3505537,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": false,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Depart the building",
+    "last_modified": "2015-11-30T08:43:46+00:00",
+    "created": "2015-11-26T02:48:43+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3636117": {
+    "id": 3636117,
+    "parent_id": 3595487,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": false,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Depart the building",
+    "last_modified": "2015-11-30T08:44:20+00:00",
+    "created": "2015-11-26T02:48:07+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595523": {
+    "id": 3595523,
+    "parent_id": 3595505,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Entrances",
+    "last_modified": "2015-12-09T04:19:06+00:00",
+    "created": "2015-11-25T01:44:59+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595475": {
+    "id": 3595475,
+    "parent_id": 3505537,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Entrances & stairs",
+    "last_modified": "2015-12-03T08:40:19+00:00",
+    "created": "2015-11-25T01:40:17+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595543": {
+    "id": 3595543,
+    "parent_id": 3595525,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Floors (lobby & green area)",
+    "last_modified": "2015-12-03T08:50:05+00:00",
+    "created": "2015-11-25T01:45:37+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "4045703": {
+    "id": 4045703,
+    "parent_id": 4045699,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Full size",
+    "last_modified": "2015-12-14T04:45:04+00:00",
+    "created": "2015-12-14T04:44:48+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "4127200": {
+    "id": 4127200,
+    "parent_id": 3491253,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "General",
+    "last_modified": "2015-12-18T01:23:08+00:00",
+    "created": "2015-12-17T07:28:45+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "4127196": {
+    "id": 4127196,
+    "parent_id": 3491253,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Invoices",
+    "last_modified": "2015-12-17T07:28:13+00:00",
+    "created": "2015-12-17T07:28:13+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595493": {
+    "id": 3595493,
+    "parent_id": 3595487,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": true,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Kitchen",
+    "last_modified": "2015-12-03T08:40:32+00:00",
+    "created": "2015-11-25T01:43:22+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595531": {
+    "id": 3595531,
+    "parent_id": 3595525,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": false,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Kitchen",
+    "last_modified": "2015-12-09T04:29:41+00:00",
+    "created": "2015-11-25T01:45:36+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595511": {
+    "id": 3595511,
+    "parent_id": 3595505,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": true,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Kitchen",
+    "last_modified": "2015-12-03T08:40:45+00:00",
+    "created": "2015-11-25T01:44:19+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595449": {
+    "id": 3595449,
+    "parent_id": 3505537,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": false,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Kitchen: bar",
+    "last_modified": "2015-12-09T04:23:01+00:00",
+    "created": "2015-11-25T01:35:59+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595445": {
+    "id": 3595445,
+    "parent_id": 3505537,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": false,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Kitchen: left",
+    "last_modified": "2015-12-09T04:23:04+00:00",
+    "created": "2015-11-25T01:35:48+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595447": {
+    "id": 3595447,
+    "parent_id": 3505537,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": false,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Kitchen: right",
+    "last_modified": "2015-12-09T04:23:07+00:00",
+    "created": "2015-11-25T01:35:55+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3958823": {
+    "id": 3958823,
+    "parent_id": 3958801,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Large: cleaning",
+    "last_modified": "2015-12-09T04:28:24+00:00",
+    "created": "2015-12-09T04:28:24+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3958825": {
+    "id": 3958825,
+    "parent_id": 3958801,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Large: mopping",
+    "last_modified": "2015-12-09T04:28:30+00:00",
+    "created": "2015-12-09T04:28:30+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3958787": {
+    "id": 3958787,
+    "parent_id": 3958785,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Left Kitchen: cleaning",
+    "last_modified": "2015-12-09T04:23:42+00:00",
+    "created": "2015-12-09T04:23:42+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3958789": {
+    "id": 3958789,
+    "parent_id": 3958785,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Left Kitchen: mopping",
+    "last_modified": "2015-12-09T04:23:51+00:00",
+    "created": "2015-12-09T04:23:51+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3986845": {
+    "id": 3986845,
+    "parent_id": 3958785,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Left Kitchen: restocking",
+    "last_modified": "2015-12-10T04:18:01+00:00",
+    "created": "2015-12-10T04:18:01+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3958815": {
+    "id": 3958815,
+    "parent_id": 3958803,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Left: large: cleaning",
+    "last_modified": "2015-12-09T04:26:47+00:00",
+    "created": "2015-12-09T04:26:47+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3958807": {
+    "id": 3958807,
+    "parent_id": 3958803,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Left: large: mopping",
+    "last_modified": "2015-12-09T04:26:54+00:00",
+    "created": "2015-12-09T04:25:41+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3958805": {
+    "id": 3958805,
+    "parent_id": 3958803,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Left: small: cleaning",
+    "last_modified": "2015-12-09T04:27:01+00:00",
+    "created": "2015-12-09T04:25:33+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3958817": {
+    "id": 3958817,
+    "parent_id": 3958803,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Left: small: mopping",
+    "last_modified": "2015-12-09T04:27:13+00:00",
+    "created": "2015-12-09T04:27:13+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3636137": {
+    "id": 3636137,
+    "parent_id": 3636133,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Lobby floor",
+    "last_modified": "2015-12-03T08:50:40+00:00",
+    "created": "2015-11-26T02:56:12+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3958875": {
+    "id": 3958875,
+    "parent_id": 0,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Meeting",
+    "last_modified": "2015-12-09T04:42:59+00:00",
+    "created": "2015-12-09T04:42:59+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3958759": {
+    "id": 3958759,
+    "parent_id": 3958757,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Men's room: cleaning",
+    "last_modified": "2015-12-09T04:19:40+00:00",
+    "created": "2015-12-09T04:19:40+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3958849": {
+    "id": 3958849,
+    "parent_id": 3958847,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Men's room: cleaning",
+    "last_modified": "2015-12-09T04:31:26+00:00",
+    "created": "2015-12-09T04:31:26+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3958833": {
+    "id": 3958833,
+    "parent_id": 3958831,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Men's room: cleaning",
+    "last_modified": "2015-12-09T04:29:21+00:00",
+    "created": "2015-12-09T04:29:21+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3958777": {
+    "id": 3958777,
+    "parent_id": 3958775,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Men's room: cleaning",
+    "last_modified": "2015-12-09T04:21:36+00:00",
+    "created": "2015-12-09T04:21:36+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3958851": {
+    "id": 3958851,
+    "parent_id": 3958847,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Men's room: mopping",
+    "last_modified": "2015-12-09T04:31:30+00:00",
+    "created": "2015-12-09T04:31:30+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3958835": {
+    "id": 3958835,
+    "parent_id": 3958831,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Men's room: mopping",
+    "last_modified": "2015-12-09T04:29:25+00:00",
+    "created": "2015-12-09T04:29:25+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3958779": {
+    "id": 3958779,
+    "parent_id": 3958775,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Men's room: mopping",
+    "last_modified": "2015-12-09T04:21:41+00:00",
+    "created": "2015-12-09T04:21:41+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3958763": {
+    "id": 3958763,
+    "parent_id": 3958757,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Men's room: mopping",
+    "last_modified": "2015-12-09T04:19:57+00:00",
+    "created": "2015-12-09T04:19:57+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3958769": {
+    "id": 3958769,
+    "parent_id": 3595511,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Mopping",
+    "last_modified": "2015-12-09T04:20:41+00:00",
+    "created": "2015-12-09T04:20:41+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3958845": {
+    "id": 3958845,
+    "parent_id": 3958841,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Mopping",
+    "last_modified": "2015-12-09T04:29:57+00:00",
+    "created": "2015-12-09T04:29:57+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3958773": {
+    "id": 3958773,
+    "parent_id": 3595493,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Mopping",
+    "last_modified": "2015-12-09T04:21:18+00:00",
+    "created": "2015-12-09T04:21:18+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3986859": {
+    "id": 3986859,
+    "parent_id": 3958841,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Restocking",
+    "last_modified": "2015-12-10T04:19:16+00:00",
+    "created": "2015-12-10T04:19:16+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595463": {
+    "id": 3595463,
+    "parent_id": 3505537,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": false,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Restroom: ground floor, left, large",
+    "last_modified": "2015-12-09T04:24:46+00:00",
+    "created": "2015-11-25T01:37:37+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595465": {
+    "id": 3595465,
+    "parent_id": 3505537,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": false,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Restroom: ground floor, left, small",
+    "last_modified": "2015-12-09T04:24:48+00:00",
+    "created": "2015-11-25T01:37:48+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595471": {
+    "id": 3595471,
+    "parent_id": 3505537,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": false,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Restroom: ground floor, mail room",
+    "last_modified": "2015-12-09T04:24:51+00:00",
+    "created": "2015-11-25T01:38:33+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595469": {
+    "id": 3595469,
+    "parent_id": 3505537,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": false,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Restroom: ground floor, right, large",
+    "last_modified": "2015-12-09T04:24:53+00:00",
+    "created": "2015-11-25T01:38:15+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595467": {
+    "id": 3595467,
+    "parent_id": 3505537,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": false,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Restroom: ground floor, right, small",
+    "last_modified": "2015-12-09T04:24:56+00:00",
+    "created": "2015-11-25T01:38:00+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595513": {
+    "id": 3595513,
+    "parent_id": 3595505,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": false,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Restroom: Men's",
+    "last_modified": "2015-12-09T04:19:24+00:00",
+    "created": "2015-11-25T01:44:19+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595533": {
+    "id": 3595533,
+    "parent_id": 3595525,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": false,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Restroom: Men's",
+    "last_modified": "2015-12-09T04:29:07+00:00",
+    "created": "2015-11-25T01:45:36+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3636135": {
+    "id": 3636135,
+    "parent_id": 3636133,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": false,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Restroom: Men's",
+    "last_modified": "2015-12-09T04:31:09+00:00",
+    "created": "2015-11-26T02:55:27+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595495": {
+    "id": 3595495,
+    "parent_id": 3595487,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": false,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Restroom: Men's",
+    "last_modified": "2015-12-09T04:21:05+00:00",
+    "created": "2015-11-25T01:43:28+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595453": {
+    "id": 3595453,
+    "parent_id": 3505537,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": false,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Restroom: top floor, large",
+    "last_modified": "2015-12-09T04:24:59+00:00",
+    "created": "2015-11-25T01:37:16+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595461": {
+    "id": 3595461,
+    "parent_id": 3505537,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": false,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Restroom: top floor, small",
+    "last_modified": "2015-12-09T04:25:01+00:00",
+    "created": "2015-11-25T01:37:24+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3636139": {
+    "id": 3636139,
+    "parent_id": 3636133,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": false,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Restroom: Women's",
+    "last_modified": "2015-12-09T04:31:12+00:00",
+    "created": "2015-11-26T02:56:39+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595535": {
+    "id": 3595535,
+    "parent_id": 3595525,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": false,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Restroom: Women's",
+    "last_modified": "2015-12-09T04:29:09+00:00",
+    "created": "2015-11-25T01:45:36+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595497": {
+    "id": 3595497,
+    "parent_id": 3595487,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": false,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Restroom: Women's",
+    "last_modified": "2015-12-09T04:21:08+00:00",
+    "created": "2015-11-25T01:43:43+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595515": {
+    "id": 3595515,
+    "parent_id": 3595505,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": false,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Restroom: Women's",
+    "last_modified": "2015-12-09T04:19:28+00:00",
+    "created": "2015-11-25T01:44:19+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3958791": {
+    "id": 3958791,
+    "parent_id": 3958785,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Right Kitchen: cleaning",
+    "last_modified": "2015-12-09T04:24:00+00:00",
+    "created": "2015-12-09T04:24:00+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3958793": {
+    "id": 3958793,
+    "parent_id": 3958785,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Right Kitchen: mopping",
+    "last_modified": "2015-12-09T04:24:07+00:00",
+    "created": "2015-12-09T04:24:07+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3986847": {
+    "id": 3986847,
+    "parent_id": 3958785,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Right Kitchen: restocking",
+    "last_modified": "2015-12-10T04:18:09+00:00",
+    "created": "2015-12-10T04:18:09+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3958809": {
+    "id": 3958809,
+    "parent_id": 3958803,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Right: large: cleaning",
+    "last_modified": "2015-12-09T04:27:23+00:00",
+    "created": "2015-12-09T04:25:52+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3958819": {
+    "id": 3958819,
+    "parent_id": 3958803,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Right: large: mopping",
+    "last_modified": "2015-12-09T04:27:35+00:00",
+    "created": "2015-12-09T04:27:35+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3958811": {
+    "id": 3958811,
+    "parent_id": 3958803,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Right: mail room: cleaning",
+    "last_modified": "2015-12-09T04:28:03+00:00",
+    "created": "2015-12-09T04:26:05+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3958821": {
+    "id": 3958821,
+    "parent_id": 3958803,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Right: mail room: mopping",
+    "last_modified": "2015-12-09T04:28:11+00:00",
+    "created": "2015-12-09T04:28:11+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3958813": {
+    "id": 3958813,
+    "parent_id": 3958803,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Right: small corner: cleaning",
+    "last_modified": "2015-12-09T04:26:30+00:00",
+    "created": "2015-12-09T04:26:30+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3986861": {
+    "id": 3986861,
+    "parent_id": 3595525,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Shipping",
+    "last_modified": "2015-12-10T04:19:21+00:00",
+    "created": "2015-12-10T04:19:21+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3986849": {
+    "id": 3986849,
+    "parent_id": 3505537,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Shipping",
+    "last_modified": "2015-12-10T04:18:22+00:00",
+    "created": "2015-12-10T04:18:22+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3958827": {
+    "id": 3958827,
+    "parent_id": 3958801,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Small: cleaning",
+    "last_modified": "2015-12-09T04:28:37+00:00",
+    "created": "2015-12-09T04:28:37+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3958829": {
+    "id": 3958829,
+    "parent_id": 3958801,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Small: mopping",
+    "last_modified": "2015-12-09T04:28:44+00:00",
+    "created": "2015-12-09T04:28:44+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595483": {
+    "id": 3595483,
+    "parent_id": 0,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Start shift",
+    "last_modified": "2015-12-04T08:19:07+00:00",
+    "created": "2015-11-25T01:41:51+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595517": {
+    "id": 3595517,
+    "parent_id": 3595505,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Surfaces",
+    "last_modified": "2015-12-03T08:40:45+00:00",
+    "created": "2015-11-25T01:44:19+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595473": {
+    "id": 3595473,
+    "parent_id": 3505537,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Surfaces",
+    "last_modified": "2015-12-03T08:40:19+00:00",
+    "created": "2015-11-25T01:40:07+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595537": {
+    "id": 3595537,
+    "parent_id": 3595525,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Surfaces",
+    "last_modified": "2015-12-03T08:50:05+00:00",
+    "created": "2015-11-25T01:45:36+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595499": {
+    "id": 3595499,
+    "parent_id": 3595487,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Surfaces",
+    "last_modified": "2015-12-03T08:40:32+00:00",
+    "created": "2015-11-25T01:43:49+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595529": {
+    "id": 3595529,
+    "parent_id": 3595525,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Trash",
+    "last_modified": "2015-12-03T08:50:05+00:00",
+    "created": "2015-11-25T01:45:36+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595509": {
+    "id": 3595509,
+    "parent_id": 3595505,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Trash",
+    "last_modified": "2015-12-03T08:40:45+00:00",
+    "created": "2015-11-25T01:44:19+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595443": {
+    "id": 3595443,
+    "parent_id": 3505537,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Trash",
+    "last_modified": "2015-12-03T08:40:19+00:00",
+    "created": "2015-11-25T01:35:43+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595491": {
+    "id": 3595491,
+    "parent_id": 3595487,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Trash",
+    "last_modified": "2015-12-03T08:40:32+00:00",
+    "created": "2015-11-25T01:43:00+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3660741": {
+    "id": 3660741,
+    "parent_id": 0,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Travel",
+    "last_modified": "2015-12-03T08:50:51+00:00",
+    "created": "2015-11-30T08:46:53+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "4127192": {
+    "id": 4127192,
+    "parent_id": 3491253,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Tsheets",
+    "last_modified": "2015-12-17T07:27:57+00:00",
+    "created": "2015-12-17T07:27:57+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595527": {
+    "id": 3595527,
+    "parent_id": 3595525,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Vacuum",
+    "last_modified": "2015-12-03T08:50:05+00:00",
+    "created": "2015-11-25T01:45:36+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595489": {
+    "id": 3595489,
+    "parent_id": 3595487,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Vacuum",
+    "last_modified": "2015-12-03T08:40:32+00:00",
+    "created": "2015-11-25T01:42:38+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595439": {
+    "id": 3595439,
+    "parent_id": 3505537,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Vacuum",
+    "last_modified": "2015-12-03T08:40:19+00:00",
+    "created": "2015-11-25T01:34:34+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595507": {
+    "id": 3595507,
+    "parent_id": 3595505,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Vacuum",
+    "last_modified": "2015-12-03T08:40:45+00:00",
+    "created": "2015-11-25T01:44:19+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3636316": {
+    "id": 3636316,
+    "parent_id": 3636133,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Vacuum stairs",
+    "last_modified": "2015-12-03T08:50:40+00:00",
+    "created": "2015-11-26T04:36:32+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595521": {
+    "id": 3595521,
+    "parent_id": 3595505,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Walk-through",
+    "last_modified": "2015-12-03T08:40:45+00:00",
+    "created": "2015-11-25T01:44:19+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595503": {
+    "id": 3595503,
+    "parent_id": 3595487,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Walk-through",
+    "last_modified": "2015-12-03T08:40:32+00:00",
+    "created": "2015-11-25T01:43:59+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595541": {
+    "id": 3595541,
+    "parent_id": 3595525,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Walk-through",
+    "last_modified": "2015-12-03T08:50:05+00:00",
+    "created": "2015-11-25T01:45:37+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3595479": {
+    "id": 3595479,
+    "parent_id": 3505537,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Walk-through",
+    "last_modified": "2015-12-03T08:40:19+00:00",
+    "created": "2015-11-25T01:40:49+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3958837": {
+    "id": 3958837,
+    "parent_id": 3958831,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Women's room: cleaning",
+    "last_modified": "2015-12-09T04:29:29+00:00",
+    "created": "2015-12-09T04:29:29+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3958781": {
+    "id": 3958781,
+    "parent_id": 3958775,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Women's room: cleaning",
+    "last_modified": "2015-12-09T04:21:45+00:00",
+    "created": "2015-12-09T04:21:45+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3958761": {
+    "id": 3958761,
+    "parent_id": 3958757,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Women's room: cleaning",
+    "last_modified": "2015-12-09T04:19:49+00:00",
+    "created": "2015-12-09T04:19:49+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3958855": {
+    "id": 3958855,
+    "parent_id": 3958847,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Women's room: cleaning",
+    "last_modified": "2015-12-09T04:31:37+00:00",
+    "created": "2015-12-09T04:31:37+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3958839": {
+    "id": 3958839,
+    "parent_id": 3958831,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Women's room: mopping",
+    "last_modified": "2015-12-09T04:29:34+00:00",
+    "created": "2015-12-09T04:29:34+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3958783": {
+    "id": 3958783,
+    "parent_id": 3958775,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Women's room: mopping",
+    "last_modified": "2015-12-09T04:21:51+00:00",
+    "created": "2015-12-09T04:21:51+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3958765": {
+    "id": 3958765,
+    "parent_id": 3958757,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Women's room: mopping",
+    "last_modified": "2015-12-09T04:20:10+00:00",
+    "created": "2015-12-09T04:20:10+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   },
+   "3958853": {
+    "id": 3958853,
+    "parent_id": 3958847,
+    "assigned_to_all": false,
+    "billable": false,
+    "active": true,
+    "type": "regular",
+    "has_children": false,
+    "billable_rate": 0,
+    "short_code": "",
+    "name": "Women's room: mopping",
+    "last_modified": "2015-12-09T04:31:34+00:00",
+    "created": "2015-12-09T04:31:34+00:00",
+    "required_customfields": [
+     
+    ],
+    "filtered_customfielditems": ""
+   }
+  }
+ }
+}

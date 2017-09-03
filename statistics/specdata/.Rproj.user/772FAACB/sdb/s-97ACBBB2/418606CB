@@ -1,0 +1,22 @@
+{
+    "contents" : "",
+    "created" : 1429644458738.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "418606CB",
+    "lastKnownWriteTime" : 80,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "caption" : "specdata",
+        "contentUrl" : "content?title=specdata&file=d2e390f9d80049888a673c9a598e16e0.htm",
+        "displayedObservations" : 10,
+        "displayedVariables" : 2,
+        "totalObservations" : 10,
+        "variables" : 2
+    },
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}

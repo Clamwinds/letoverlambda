@@ -1,0 +1,96 @@
+; CIDER 0.11.0snapshot (package: 20160104.1114) (Java 1.7.0_95, Clojure 1.7.0, nREPL 0.2.12)
+WARNING: CIDER's version (0.11.0-snapshot) does not match cider-nrepl's version (0.10.0-snapshot). Things will break!
+CompilerException java.lang.RuntimeException: Unable to resolve symbol: unchecked in this context, compiling:(/home/lucien/lisp/project1/project2/src/project2/core.clj:28:7) 
+CompilerException java.lang.RuntimeException: Unable to resolve symbol: unchecked in this context, compiling:(/home/lucien/lisp/project1/project2/src/project2/core.clj:28:7) 
+user> #'project2.core/hash-unordered
+(+ 1 1)
+2
+project2.core> (defn hash-unordered [collection]
+                 (-> (reduce unchecked-add-int 0 (map hash collection))
+                     (mix-collection-hash (count collection))))
+#<Var@2a2198c2: #object[project2.core$hash_unordered 0x37fca1dd "project2.core$hash_unordered@37fca1dd"]>
+project2.core> defn hash-ordered [collection]
+CompilerException java.lang.RuntimeException: Can't take value of a macro: #'clojure.core/defn, compiling:(/home/lucien/lisp/project1/project2/src/project2/core.clj:1:6354) 
+#object[project2.core$hash_ordered 0x4845ddbf "project2.core$hash_ordered@4845ddbf"]
+CompilerException java.lang.RuntimeException: Unable to resolve symbol: collection in this context, compiling:(/home/lucien/lisp/project1/project2/src/project2/core.clj:1:6354) 
+project2.core> (defn hash-ordered [collection]
+                 (-> (reduce fn [acc e] (unchecked-add-int
+                                         (unchecked-multiply-int 31 acc)
+                                         (hash e)))
+                     1
+                     collection)
+                 (mix-collection-hash (count collection)))
+CompilerException java.lang.RuntimeException: Can't take value of a macro: #'clojure.core/fn, compiling:(/home/lucien/lisp/project1/project2/src/project2/core.clj:2:22) 
+project2.core> (defn hash-ordered [collection]
+                 (-> (reduce (fn [acc e] (unchecked-add-int
+                                         (unchecked-multiply-int 31 acc)
+                                         (hash e)))
+                     1
+                     collection)
+                 (mix-collection-hash (count collection))))
+#<Var@21620778: #object[project2.core$hash_ordered 0x63114109 "project2.core$hash_ordered@63114109"]>
+project2.core> (macroexpand '(when bool-ean-expression
+                               expression-1
+                               expression-2
+                               expression-3))
+(if bool-ean-expression (do expression-1 expression-2 expression-3))
+project2.core> (defmacro infix
+                 "use this macro whe you pine for the notation of your childhood"
+                 [innfixed]
+                 (list (second infixed) (first infixed) (last infixed)))
+CompilerException java.lang.RuntimeException: Unable to resolve symbol: infixed in this context, compiling:(/home/lucien/lisp/project1/project2/src/project2/core.clj:4:24) 
+project2.core> (defmacro infix
+                 "use this macro whe you pine for the notation of your childhood"
+                 [infixed]
+                 (list (second infixed) (first infixed) (last infixed)))
+#<Var@1a3377bb: #object[project2.core$infix 0x75454c9b "project2.core$infix@75454c9b"]>
+project2.core> (infix (1 + 1))
+2
+project2.core> (macroexpand '(infix (1 + 1)))
+(+ 1 1)
+project2.core> (defmacro infix-2
+                 [[operand1 op operand2]]
+                 (list op operand1 operand2))
+#<Var@2a1ea6e9: #object[project2.core$infix_2 0x7024ac04 "project2.core$infix_2@7024ac04"]>
+project2.core> (defmacro and
+                 "Evaluates expres one at a time, fom let to right. If a form returns logical false (nil or false), and retursn that value and doesn't eavluate any of the other expressions it returns the value of the last expr. (and) returns true."
+                 {:added "1.0")
+                 ([] true)
+                 ([x] x)
+                 ([x & next]
+                  '(let [and# -x]
+                     (if and# (and #next) and#))))
+RuntimeException Unmatched delimiter: )  clojure.lang.Util.runtimeException (Util.java:221)
+IllegalArgumentException Key must be integer  clojure.lang.APersistentVector.invoke (APersistentVector.java:284)
+CompilerException java.lang.RuntimeException: Unable to resolve symbol: x in this context, compiling:(/home/lucien/lisp/project1/project2/src/project2/core.clj:5:18) 
+RuntimeException Unmatched delimiter: )  clojure.lang.Util.runtimeException (Util.java:221)
+CompilerException java.lang.RuntimeException: Unable to resolve symbol: and# in this context, compiling:(/home/lucien/lisp/project1/project2/src/project2/core.clj:1:6354) 
+RuntimeException Unmatched delimiter: )  clojure.lang.Util.runtimeException (Util.java:221)
+RuntimeException Unmatched delimiter: )  clojure.lang.Util.runtimeException (Util.java:221)
+RuntimeException Unmatched delimiter: )  clojure.lang.Util.runtimeException (Util.java:221)
+RuntimeException Unmatched delimiter: )  clojure.lang.Util.runtimeException (Util.java:221)
+project2.core> (defmacro and
+                 "Evaluates expres one at a time, fom let to right. If a form returns logical false (nil or false), and retursn that value and doesn't eavluate any of the other expressions it returns the value of the last expr. (and) returns true."
+                 {:added "1.0")
+                 ([] true)
+                 ([x] x)
+                 ([x & next]
+                  `(let [and# -x]
+                     (if and# (and #next) and#))))
+RuntimeException Unmatched delimiter: )  clojure.lang.Util.runtimeException (Util.java:221)
+IllegalArgumentException Key must be integer  clojure.lang.APersistentVector.invoke (APersistentVector.java:284)
+CompilerException java.lang.RuntimeException: Unable to resolve symbol: x in this context, compiling:(/home/lucien/lisp/project1/project2/src/project2/core.clj:5:18) 
+RuntimeException Unmatched delimiter: )  clojure.lang.Util.runtimeException (Util.java:221)
+CompilerException java.lang.RuntimeException: Unable to resolve symbol: and# in this context, compiling:(/home/lucien/lisp/project1/project2/src/project2/core.clj:1:6354) 
+RuntimeException Unmatched delimiter: )  clojure.lang.Util.runtimeException (Util.java:221)
+RuntimeException Unmatched delimiter: )  clojure.lang.Util.runtimeException (Util.java:221)
+RuntimeException Unmatched delimiter: )  clojure.lang.Util.runtimeException (Util.java:221)
+RuntimeException Unmatched delimiter: )  clojure.lang.Util.runtimeException (Util.java:221)
+project2.core> (defmacro and
+                 "Evaluates expres one at a time, fom let to right. If a form returns logical false (nil or false), and retursn that value and doesn't eavluate any of the other expressions it returns the value of the last expr. (and) returns true."
+                 {:added "1.0")
+                 ([] true)
+                 ([x] x)
+                 ([x & next]
+                  `(let [and# -x]
+                     (if and# (and -@next) and#))))

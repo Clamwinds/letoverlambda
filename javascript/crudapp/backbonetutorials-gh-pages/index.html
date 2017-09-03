@@ -1,0 +1,96 @@
+---
+layout: default
+title: 
+---
+
+
+
+
+<div class="row" >
+  <div class="col-lg-6">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title">Beginners</h3>
+      </div>
+      <div class="list-group">
+          {% for post in site.posts %}
+            {% if post.type == "beginner" %}
+            <a href="{{ post.url }}" class="list-group-item ">{{ post.title }}</a>
+            {% endif %}
+          {% endfor %}
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6">
+    <div class="panel panel-warning">
+      <div class="panel-heading">
+        <h3 class="panel-title">Intermediate</h3>
+      </div>
+      <div class="list-group">
+          {% for post in site.posts %}
+            {% if post.type == "intermediate" %}
+            <a href="{{ post.url }}" class="list-group-item ">{{ post.title }}</a>
+            {% endif %}
+          {% endfor %}
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+<div class="row" >
+  <div class="col-lg-12">
+
+  </div>
+
+</div>
+
+
+<div class="row" >
+  <div class="col-lg-6">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">External Tutorials</h3>
+      </div>
+      <div class="list-group">
+
+          <a class="list-group-item" href="http://backboneboilerplate.com">Backbone Boilerplate - Using require.js with build system</a>
+      <a class="list-group-item" href="http://antoviaque.org/docs/tutorials/backbone-relational-tutorial/">Backbone-relational Tutorial - Nested Models With Backbone.js</a>
+          <a class="list-group-item" target="_blank" href="http://thomasdavis.github.com/2011/02/01/backbone-introduction.html">Backbone.js Tutorial – by noob for noobs</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">Example Apps</h3>
+      </div>
+      <div class="list-group">
+        <a class="list-group-item" href="http://www.dronehire.org">DroneHire.org - 100% built with Backbone.js</a>
+  <a class="list-group-item" href="http://kaleistyleguide.com/">Kalei - A living CSS styleguide</a>
+      <a class="list-group-item" href="https://github.com/alessioalex/ClientManager" alt="Sample application built with Backbone, RequireJS, Twitter Bootstrap on the client and Node.js (Express.js, Mongoose) on the server.">ClientManager - Sample application</a>
+      <a class="list-group-item" href="http://www.clevertim.com">Clevertim CRM - A simple CRM</a>
+</div>
+    </div>
+  </div>
+
+</div>
+<!--
+<h2>Backbone Boilerplate</h2>
+<ul class="tutorials">
+<li><a href="http://backboneboilerplate.com">Backbone Boilerplate - Using require.js with build system</a></li>
+    <li><a target="_blank" href="http://thomasdavis.github.com/2011/02/01/backbone-introduction.html">Backbone.js Tutorial – by noob for noobs</a></li>
+</ul>
+<h2>Demo apps!</h2>
+<ul class="tutorials">
+
+<li><a href="http://www.earbits.com">Earbits.com - Music streaming website built with Backbone.js - Great for programmers who listen to music when coding</a></li>
+<li><a href="http://kaleistyleguide.com/">Kalei - A living CSS styleguide - Built with Backbone.js using these principles</a></li>
+<li><a href="http://apiengine.io">ApiEngine.io</a> (Beta) - Collaborativly build RESTful API's with automated testing and client mocking.</li>
+    <li><a href="https://github.com/alessioalex/ClientManager" alt="Sample application built with Backbone, RequireJS, Twitter Bootstrap on the client and Node.js (Express.js, Mongoose) on the server.">ClientManager</a> - Sample application built with Backbone, RequireJS, Twitter Bootstrap on the client and Node.js (Express.js, Mongoose) on the server.</li>
+    <li><a href="http://antoviaque.org/docs/tutorials/backbone-relational-tutorial/">Backbone-relational Tutorial</a> - Nested Models With Backbone.js</li>
+    <li><a href="http://www.clevertim.com">Clevertim CRM - A real life example of implementing a simple CRM with backbone.js (check the Quick Demo)</a></li>
+</ul>
+-->

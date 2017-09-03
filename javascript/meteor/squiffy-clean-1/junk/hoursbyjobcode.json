@@ -1,0 +1,80 @@
+[
+  {
+    "\"Building 20 >> At building\":\"1.5\"": "\"Building 20 >> Depart the building\":\"0.34\""
+  },
+  {
+    "\"Building 20 >> At building\":\"1.5\"": "\"Building 20 >> Surfaces\":\"1.36\""
+  },
+  {
+    "\"Building 20 >> At building\":\"1.5\"": "\"Building 20 >> Trash\":\"1.53\""
+  },
+  {
+    "\"Building 20 >> At building\":\"1.5\"": "\"Building 20 >> Vacuum\":\"1.29\""
+  },
+  {
+    "\"Building 20 >> At building\":\"1.5\"": "\"Building 20 >> Walk-through\":\"0.49\""
+  },
+  {
+    "\"Building 20 >> At building\":\"1.5\"": "\"Building 556 >> At building\":\"0.55\""
+  },
+  {
+    "\"Building 20 >> At building\":\"1.5\"": "\"Building 556 >> Depart the building\":\"0.4\""
+  },
+  {
+    "\"Building 20 >> At building\":\"1.5\"": "\"Building 556 >> Kitchen\":\"0.21\""
+  },
+  {
+    "\"Building 20 >> At building\":\"1.5\"": "\"Building 556 >> Restroom: Men's\":\"0.2\""
+  },
+  {
+    "\"Building 20 >> At building\":\"1.5\"": "\"Building 556 >> Restroom: Women's\":\"0.47\""
+  },
+  {
+    "\"Building 20 >> At building\":\"1.5\"": "\"Building 556 >> Surfaces\":\"0.25\""
+  },
+  {
+    "\"Building 20 >> At building\":\"1.5\"": "\"Building 556 >> Walk-through\":\"0.38\""
+  },
+  {
+    "\"Building 20 >> At building\":\"1.5\"": "\"Building 583 >> Trash\":\"0.14\""
+  },
+  {
+    "\"Building 20 >> At building\":\"1.5\"": "\"Cleaning Technician\":\"9.58\""
+  },
+  {
+    "\"Building 20 >> At building\":\"1.5\"": "\"Clock in\":\"9.67\""
+  },
+  {
+    "\"Building 20 >> At building\":\"1.5\"": "\"Hacker Dojo >> At building\":\"0.12\""
+  },
+  {
+    "\"Building 20 >> At building\":\"1.5\"": "\"Hacker Dojo >> Depart the building\":\"0.27\""
+  },
+  {
+    "\"Building 20 >> At building\":\"1.5\"": "\"Hacker Dojo >> Floors (lobby & green area)\":\"0.26\""
+  },
+  {
+    "\"Building 20 >> At building\":\"1.5\"": "\"Hacker Dojo >> Kitchen\":\"0.63\""
+  },
+  {
+    "\"Building 20 >> At building\":\"1.5\"": "\"Hacker Dojo >> Vacuum\":\"0.08\""
+  },
+  {
+    "\"Building 20 >> At building\":\"1.5\"": "\"Hacker Dojo >> Walk-through\":\"1.52\""
+  },
+  {
+    "\"Building 20 >> At building\":\"1.5\"": "\"Home >> At building\":\"0.61\""
+  },
+  {
+    "\"Building 20 >> At building\":\"1.5\"": "\"Home >> Restroom: Men's\":\"0\""
+  },
+  {
+    "\"Building 20 >> At building\":\"1.5\"": "\"Home >> Restroom: Women's\":\"0.28\""
+  },
+  {
+    "\"Building 20 >> At building\":\"1.5\"": "\"Shift Total\":\"1.75\""
+  },
+  {
+    "\"Building 20 >> At building\":\"1.5\"": "\"Travel\":\"1.79\""
+  }
+]

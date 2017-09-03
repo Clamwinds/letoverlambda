@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>Organizing your application using Modules (require.js) - Backbone.js Tutorials</title>
+<link href="/atom.xml" rel="alternate" title="backbone tutorials" type="application/atom+xml">
+   <meta name="author" content="Backbone Tutorials" />
+   <!-- syntax highlighting CSS -->
+
+   <!-- syntax highlighting CSS -->
+   <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+   
+   <!-- Homepage CSS -->
+   <link rel="stylesheet" href="//bootswatch.com/sandstone/bootstrap.min.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/style.css" type="text/css" media="screen, projection" />
+   <link href="https://fonts.googleapis.com/css?family=Arvo:400,700&subset=latin" rel="stylesheet" type="text/css">
+
+
+   <!-- Typekit -->
+   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+ 
+  
+   
+
+</head>
+<body>
+
+  <div class="row">
+
+      <div class="navbar navbar-default">
+      <div class="container">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="/">Backbone Tutorials</a>
+  </div>
+  <div class="navbar-collapse collapse navbar-responsive-collapse">
+    <ul class="nav navbar-nav">
+              <li class=""><a href="/">Tutorials</a></li>
+
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+       <li><a href="http://prerender.io"><strong>Need SEO?</strong></a></li>
+      <li><a href="https://leanpub.com/backbonetutorials">Download eBook (.pdf, .MOBI, .ePub)</a></li>
+    </ul>
+  </div>
+</div>
+
+</div>
+
+
+<div class="container">
+<div class="row">
+<div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">About</h3>
+      </div>
+      <div class="panel-body">
+  <div class="col-lg-4">
+    
+    <p>Backbone Tutorials is a collection of tutorials written by <a href="http://thomasdav.is">Thomas Davis</a>. Everything is open source and I try my best to keep the tutorials updated. Though I am busy and only work on this is my spare time so many <a href="https://github.com/thomasdavis/backbonetutorials/graphs/contributors">contributors</a> have also help me put this resource together.</p>
+<a href="https://twitter.com/neutralthoughts" class="twitter-follow-button" data-show-count="true">Follow @neutralthoughts</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>   
+ </div>
+  <div class="col-lg-8">
+        <h3 >Backbone.js Beginner Video Tutorial</h3>
+      <img src="/backbone.png" style="float: left;" /><p>I have put extra effort into making a very easy to understand Backbone.js video which is also free.   It is 70mins long and covers everything you need to know when getting started.</p>
+      <a href="https://www.youtube.com/watch?v=FZSjvWtUxYk" class="btn btn-primary">Watch Video</a>
+  </div>
+  
+ </div>
+  </div>
+</div>
+      <div id="post">
+<h1>Organizing your application using Modules (require.js)</h1>
+
+<p>Unfortunately Backbone.js does not tell you how to organize your code, leaving many developers in the dark regarding how to load scripts and lay out their development environments.</p>
+
+<p>This was quite a different decision to other JavaScript MVC frameworks who were more in favor of setting a development philosophy.</p>
+
+<p>Hopefully this tutorial will allow you to build  a much more robust project with great separation of concerns between design and code.</p>
+
+<p>This tutorial will get you started on combining Backbone.js with <a href="https://github.com/amdjs/amdjs-api/wiki/AMD">AMD</a> (Asynchronous Module Definitions).</p>
+
+<h2>What is AMD?</h2>
+
+<p><a href="https://github.com/amdjs/amdjs-api/wiki/AMD">Asynchronous Module Definitions</a> designed to load modular code asynchronously in the browser and server.   It is actually a fork of the Common.js specification.   Many script loaders have built their implementations around AMD, seeing it as the future of modular JavaScript development.</p>
+
+<p>This tutorial will use <a href="http://requirejs.org">Require.js</a> to implement a modular and organized Backbone.js.</p>
+
+<p><strong>I highly recommend using AMD for application development</strong></p>
+
+<p>Quick Overview</p>
+
+<ul>
+<li>Modular</li>
+<li>Scalable</li>
+<li>Compiles well(see <a href="http://requirejs.org/docs/optimization.html">r.js</a> )</li>
+<li>Market Adoption( <a href="http://dojotoolkit.org/reference-guide/releasenotes/1.6.html">Dojo 1.6 converted fully to AMD</a> )</li>
+</ul>
+
+<h2>Why Require.js?</h2>
+
+<p>p. Require.js has a great community and it is growing rapidly.  <a href="http://tagneto.blogspot.com/">James Burke</a> the author is married to Require.js and always responds to user feedback.   He is a leading expert in script loading and a contributer to the AMD specification.</p>
+
+<p><a href="https://twitter.com/jrburke" class="twitter-follow-button">Follow @jrburke</a>
+<script src="//platform.twitter.com/widgets.js" type="text/javascript"></script></p>
+
+<h2>Getting started</h2>
+
+<p>To easily understand this tutorial you should jump straight into the example code base.</p>
+
+<p><a href="https://github.com/thomasdavis/backbonetutorials/tree/gh-pages/examples/modular-backbone">Example Codebase</a></p>
+
+<p><a href="http://backbonetutorials.com/examples/modular-backbone">Example Demo</a></p>
+
+<p>The tutorial is only loosely coupled with the example and you will find the example to be more comprehensive.</p>
+
+<p>If you would like to see how a particular use case would be implemented please visit the GitHub page and create an issue.(Example Request: How to do nested views).</p>
+
+<p>The example isn&#39;t super fleshed out but should give you a vague idea.</p>
+
+<h2>Example File Structure</h2>
+
+<p>There are many different ways to lay out your files and I believe it is actually dependent on the size and type of the project.   In the example below views and templates are mirrored in file structure.  Collections and Models are categorized into folders kind of like an ORM.</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="cm">/* File Structure</span>
+<span class="cm">├── imgs</span>
+<span class="cm">├── css</span>
+<span class="cm">│   └── style.css</span>
+<span class="cm">├── templates</span>
+<span class="cm">│   ├── projects</span>
+<span class="cm">│   │   ├── list.html</span>
+<span class="cm">│   │   └── edit.html</span>
+<span class="cm">│   └── users</span>
+<span class="cm">│       ├── list.html</span>
+<span class="cm">│       └── edit.html</span>
+<span class="cm">├── js</span>
+<span class="cm">│   ├── libs</span>
+<span class="cm">│   │   ├── jquery</span>
+<span class="cm">│   │   │   ├── jquery.min.js</span>
+<span class="cm">│   │   ├── backbone</span>
+<span class="cm">│   │   │   ├── backbone.min.js</span>
+<span class="cm">│   │   └── underscore</span>
+<span class="cm">│   │   │   ├── underscore.min.js</span>
+<span class="cm">│   ├── models</span>
+<span class="cm">│   │   ├── users.js</span>
+<span class="cm">│   │   └── projects.js</span>
+<span class="cm">│   ├── collections</span>
+<span class="cm">│   │   ├── users.js</span>
+<span class="cm">│   │   └── projects.js</span>
+<span class="cm">│   ├── views</span>
+<span class="cm">│   │   ├── projects</span>
+<span class="cm">│   │   │   ├── list.js</span>
+<span class="cm">│   │   │   └── edit.js</span>
+<span class="cm">│   │   └── users</span>
+<span class="cm">│   │       ├── list.js</span>
+<span class="cm">│   │       └── edit.js</span>
+<span class="cm">│   ├── router.js</span>
+<span class="cm">│   ├── app.js</span>
+<span class="cm">│   ├── main.js  // Bootstrap</span>
+<span class="cm">│   ├── order.js //Require.js plugin</span>
+<span class="cm">│   └── text.js  //Require.js plugin</span>
+<span class="cm">└── index.html</span>
+
+<span class="cm">*/</span></code></pre></div>
+
+<p>To continue you must really understand what we are aiming towards as described in the introduction.</p>
+
+<h2>Bootstrapping your application</h2>
+
+<p>Using Require.js we define a single entry point on our index page.
+We should setup any useful containers that might be used by our Backbone views.</p>
+
+<p><em>Note: The data-main attribute on our single script tag tells Require.js to load the script located at &quot;js/main.js&quot;.  It automatically appends the &quot;.js&quot;</em></p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!doctype html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">&quot;en&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Jackie Chan<span class="nt">&lt;/title&gt;</span>
+    <span class="c">&lt;!-- Load the script &quot;js/main.js&quot; as our entry point --&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">data-main=</span><span class="s">&quot;js/main&quot;</span> <span class="na">src=</span><span class="s">&quot;js/libs/require/require.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;container&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;menu&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;content&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span></code></pre></div>
+
+<p>You should most always end up with quite a light weight index file.   You can serve this off your server and then the rest of your site off a CDN ensuring that everything that can be cached, will be. (You can also now serve the index file off the CDN using Cloudfront)</p>
+
+<h3>What does the bootstrap look like?</h3>
+
+<p>Our bootstrap file will be responsible for configuring Require.js and loading initially important dependencies.</p>
+
+<p>In the example below we configure Require.js to create a shortcut alias to commonly used scripts such as jQuery, Underscore and Backbone.</p>
+
+<p>Unfortunately Backbone.js isn&#39;t AMD enabled so I downloaded the community managed repository and patched it on <a href="https://github.com/amdjs">amdjs</a>.</p>
+
+<p>Hopefully if the AMD specification takes off these libraries will add code to allow themselves to be loaded asynchronously.   Due to this inconvenience the bootstrap is not as intuitive as it could be.</p>
+
+<p>We also request a module called &quot;app&quot;, this will contain the entirety of our application logic.</p>
+
+<p><em>Note: Modules are loaded relatively to the boot strap and always append with &quot;.js&quot;.   So the module &quot;app&quot; will load &quot;app.js&quot; which is in the same directory as the bootstrap.</em></p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// Filename: main.js</span>
+
+<span class="c1">// Require.js allows us to configure shortcut alias</span>
+<span class="c1">// There usage will become more apparent further along in the tutorial.</span>
+<span class="nx">require</span><span class="p">.</span><span class="nx">config</span><span class="p">({</span>
+  <span class="nx">paths</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">jquery</span><span class="o">:</span> <span class="s1">&#39;libs/jquery/jquery&#39;</span><span class="p">,</span>
+    <span class="nx">underscore</span><span class="o">:</span> <span class="s1">&#39;libs/underscore/underscore&#39;</span><span class="p">,</span>
+    <span class="nx">backbone</span><span class="o">:</span> <span class="s1">&#39;libs/backbone/backbone&#39;</span>
+  <span class="p">}</span>
+
+<span class="p">});</span>
+
+<span class="nx">require</span><span class="p">([</span>
+
+  <span class="c1">// Load our app module and pass it to our definition function</span>
+  <span class="s1">&#39;app&#39;</span><span class="p">,</span>
+<span class="p">],</span> <span class="kd">function</span><span class="p">(</span><span class="nx">App</span><span class="p">){</span>
+  <span class="c1">// The &quot;app&quot; dependency is passed in as &quot;App&quot;</span>
+  <span class="nx">App</span><span class="p">.</span><span class="nx">initialize</span><span class="p">();</span>
+<span class="p">});</span></code></pre></div>
+
+<h2>How should we lay out external scripts?</h2>
+
+<p>Any modules we develop for our application using AMD/Require.js will be asynchronously loaded.</p>
+
+<p>We have a heavy dependency on jQuery, Underscore and Backbone, unfortunately this libraries are loaded synchronously and also depend on each other existing in the global namespace.</p>
+
+<h2>A boiler plate module</h2>
+
+<p>So before we start developing our application, let&#39;s quickly look over boiler plate code that will be reused quite often.</p>
+
+<p>For convenience sake I generally keep a &quot;boilerplate.js&quot; in my application root so I can copy it when I need to.</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">//Filename: boilerplate.js</span>
+
+<span class="nx">define</span><span class="p">([</span>
+  <span class="c1">// These are path alias that we configured in our bootstrap</span>
+  <span class="s1">&#39;jquery&#39;</span><span class="p">,</span>     <span class="c1">// lib/jquery/jquery</span>
+  <span class="s1">&#39;underscore&#39;</span><span class="p">,</span> <span class="c1">// lib/underscore/underscore</span>
+  <span class="s1">&#39;backbone&#39;</span>    <span class="c1">// lib/backbone/backbone</span>
+<span class="p">],</span> <span class="kd">function</span><span class="p">(</span><span class="nx">$</span><span class="p">,</span> <span class="nx">_</span><span class="p">,</span> <span class="nx">Backbone</span><span class="p">){</span>
+  <span class="c1">// Above we have passed in jQuery, Underscore and Backbone</span>
+  <span class="c1">// They will not be accessible in the global scope</span>
+  <span class="k">return</span> <span class="p">{};</span>
+  <span class="c1">// What we return here will be used by other modules</span>
+<span class="p">});</span></code></pre></div>
+
+<p>The first argument of the define function is our dependency array, in the future we can pass in any modules we like.</p>
+
+<h2>App.js Building our applications main module</h2>
+
+<p>Our applications main module should always remain light weight.   This tutorial only covers setting up a Backbone Router and initializing it in our main module.</p>
+
+<p>The router will then load the correct dependencies depending on the current URL.</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// Filename: app.js</span>
+<span class="nx">define</span><span class="p">([</span>
+  <span class="s1">&#39;jquery&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;underscore&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;backbone&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;router&#39;</span><span class="p">,</span> <span class="c1">// Request router.js</span>
+<span class="p">],</span> <span class="kd">function</span><span class="p">(</span><span class="nx">$</span><span class="p">,</span> <span class="nx">_</span><span class="p">,</span> <span class="nx">Backbone</span><span class="p">,</span> <span class="nx">Router</span><span class="p">){</span>
+  <span class="kd">var</span> <span class="nx">initialize</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+    <span class="c1">// Pass in our Router module and call it&#39;s initialize function</span>
+    <span class="nx">Router</span><span class="p">.</span><span class="nx">initialize</span><span class="p">();</span>
+  <span class="p">}</span>
+
+  <span class="k">return</span> <span class="p">{</span>
+    <span class="nx">initialize</span><span class="o">:</span> <span class="nx">initialize</span>
+  <span class="p">};</span>
+<span class="p">});</span></code></pre></div>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// Filename: router.js</span>
+<span class="nx">define</span><span class="p">([</span>
+  <span class="s1">&#39;jquery&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;underscore&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;backbone&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;views/projects/list&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;views/users/list&#39;</span>
+<span class="p">],</span> <span class="kd">function</span><span class="p">(</span><span class="nx">$</span><span class="p">,</span> <span class="nx">_</span><span class="p">,</span> <span class="nx">Backbone</span><span class="p">,</span> <span class="nx">ProjectListView</span><span class="p">,</span> <span class="nx">UserListView</span><span class="p">){</span>
+  <span class="kd">var</span> <span class="nx">AppRouter</span> <span class="o">=</span> <span class="nx">Backbone</span><span class="p">.</span><span class="nx">Router</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+    <span class="nx">routes</span><span class="o">:</span> <span class="p">{</span>
+      <span class="c1">// Define some URL routes</span>
+      <span class="s1">&#39;/projects&#39;</span><span class="o">:</span> <span class="s1">&#39;showProjects&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;/users&#39;</span><span class="o">:</span> <span class="s1">&#39;showUsers&#39;</span><span class="p">,</span>
+
+      <span class="c1">// Default</span>
+      <span class="s1">&#39;*actions&#39;</span><span class="o">:</span> <span class="s1">&#39;defaultAction&#39;</span>
+    <span class="p">}</span>
+  <span class="p">});</span>
+
+  <span class="kd">var</span> <span class="nx">initialize</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+    <span class="kd">var</span> <span class="nx">app_router</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">AppRouter</span><span class="p">;</span>
+    <span class="nx">app_router</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;showProjects&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
+      <span class="c1">// Call render on the module we loaded in via the dependency array</span>
+      <span class="c1">// &#39;views/projects/list&#39;</span>
+      <span class="kd">var</span> <span class="nx">projectListView</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ProjectListView</span><span class="p">();</span>
+      <span class="nx">projectListView</span><span class="p">.</span><span class="nx">render</span><span class="p">();</span>
+    <span class="p">});</span>
+      <span class="c1">// As above, call render on our loaded module</span>
+      <span class="c1">// &#39;views/users/list&#39;</span>
+    <span class="nx">app_router</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;showUsers&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
+      <span class="kd">var</span> <span class="nx">userListView</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">UserListView</span><span class="p">();</span>
+      <span class="nx">userListView</span><span class="p">.</span><span class="nx">render</span><span class="p">();</span>
+    <span class="p">});</span>
+    <span class="nx">app_router</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;defaultAction&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">actions</span><span class="p">){</span>
+      <span class="c1">// We have no matching route, lets just log what the URL was</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;No route:&#39;</span><span class="p">,</span> <span class="nx">actions</span><span class="p">);</span>
+    <span class="p">});</span>
+    <span class="nx">Backbone</span><span class="p">.</span><span class="nx">history</span><span class="p">.</span><span class="nx">start</span><span class="p">();</span>
+  <span class="p">};</span>
+  <span class="k">return</span> <span class="p">{</span>
+    <span class="nx">initialize</span><span class="o">:</span> <span class="nx">initialize</span>
+  <span class="p">};</span>
+<span class="p">});</span></code></pre></div>
+
+<h2>Modularizing a Backbone View</h2>
+
+<p>Backbone views usually interact with the DOM. Using our new modular system we can load in JavaScript templates using the Require.js text! plug-in.</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// Filename: views/project/list</span>
+<span class="nx">define</span><span class="p">([</span>
+  <span class="s1">&#39;jquery&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;underscore&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;backbone&#39;</span><span class="p">,</span>
+  <span class="c1">// Using the Require.js text! plugin, we are loaded raw text</span>
+  <span class="c1">// which will be used as our views primary template</span>
+  <span class="s1">&#39;text!templates/project/list.html&#39;</span>
+<span class="p">],</span> <span class="kd">function</span><span class="p">(</span><span class="nx">$</span><span class="p">,</span> <span class="nx">_</span><span class="p">,</span> <span class="nx">Backbone</span><span class="p">,</span> <span class="nx">projectListTemplate</span><span class="p">){</span>
+  <span class="kd">var</span> <span class="nx">ProjectListView</span> <span class="o">=</span> <span class="nx">Backbone</span><span class="p">.</span><span class="nx">View</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+    <span class="nx">el</span><span class="o">:</span> <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#container&#39;</span><span class="p">),</span>
+    <span class="nx">render</span><span class="o">:</span> <span class="kd">function</span><span class="p">(){</span>
+      <span class="c1">// Using Underscore we can compile our template with data</span>
+      <span class="kd">var</span> <span class="nx">data</span> <span class="o">=</span> <span class="p">{};</span>
+      <span class="kd">var</span> <span class="nx">compiledTemplate</span> <span class="o">=</span> <span class="nx">_</span><span class="p">.</span><span class="nx">template</span><span class="p">(</span> <span class="nx">projectListTemplate</span><span class="p">,</span> <span class="nx">data</span> <span class="p">);</span>
+      <span class="c1">// Append our compiled template to this Views &quot;el&quot;</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">$el</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span> <span class="nx">compiledTemplate</span> <span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">});</span>
+  <span class="c1">// Our module now returns our view</span>
+  <span class="k">return</span> <span class="nx">ProjectListView</span><span class="p">;</span>
+<span class="p">});</span></code></pre></div>
+
+<p>JavaScript templating allows us to separate the design from the application logic by placing all our HTML in the templates folder.</p>
+
+<h2>Modularizing a Collection, Model and View</h2>
+
+<p>Now we put it altogether by chaining up a Model, Collection and View which is a typical scenario when building a Backbone.js application.</p>
+
+<p>First we will define our model</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// Filename: models/project</span>
+<span class="nx">define</span><span class="p">([</span>
+  <span class="s1">&#39;underscore&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;backbone&#39;</span>
+<span class="p">],</span> <span class="kd">function</span><span class="p">(</span><span class="nx">_</span><span class="p">,</span> <span class="nx">Backbone</span><span class="p">){</span>
+  <span class="kd">var</span> <span class="nx">ProjectModel</span> <span class="o">=</span> <span class="nx">Backbone</span><span class="p">.</span><span class="nx">Model</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+    <span class="nx">defaults</span><span class="o">:</span> <span class="p">{</span>
+      <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;Harry Potter&quot;</span>
+    <span class="p">}</span>
+  <span class="p">});</span>
+  <span class="c1">// Return the model for the module</span>
+  <span class="k">return</span> <span class="nx">ProjectModel</span><span class="p">;</span>
+<span class="p">});</span></code></pre></div>
+
+<p>Now that we have a model, our collection module can depend on it.  We will set the &quot;model&quot; attribute of our collection to the loaded module.  Backbone.js offers great benefits when doing this.</p>
+
+<blockquote>
+<p>Collection.model: Override this property to specify the model class that the collection contains. If defined, you can pass raw attributes objects (and arrays) to add, create, and reset, and the attributes will be converted into a model of the proper type.</p>
+</blockquote>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// Filename: collections/projects</span>
+<span class="nx">define</span><span class="p">([</span>
+  <span class="s1">&#39;underscore&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;backbone&#39;</span><span class="p">,</span>
+  <span class="c1">// Pull in the Model module from above</span>
+  <span class="s1">&#39;models/project&#39;</span>
+<span class="p">],</span> <span class="kd">function</span><span class="p">(</span><span class="nx">_</span><span class="p">,</span> <span class="nx">Backbone</span><span class="p">,</span> <span class="nx">ProjectModel</span><span class="p">){</span>
+  <span class="kd">var</span> <span class="nx">ProjectCollection</span> <span class="o">=</span> <span class="nx">Backbone</span><span class="p">.</span><span class="nx">Collection</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+    <span class="nx">model</span><span class="o">:</span> <span class="nx">ProjectModel</span>
+  <span class="p">});</span>
+  <span class="c1">// You don&#39;t usually return a collection instantiated</span>
+  <span class="k">return</span> <span class="nx">ProjectCollection</span><span class="p">;</span>
+<span class="p">});</span></code></pre></div>
+
+<p>Now we can simply depend on our collection in our view and pass it to our JavaScript template.</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// Filename: views/projects/list</span>
+<span class="nx">define</span><span class="p">([</span>
+  <span class="s1">&#39;jquery&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;underscore&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;backbone&#39;</span><span class="p">,</span>
+  <span class="c1">// Pull in the Collection module from above</span>
+  <span class="s1">&#39;collections/projects&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;text!templates/projects/list.html&#39;</span>
+<span class="p">],</span> <span class="kd">function</span><span class="p">(</span><span class="nx">$</span><span class="p">,</span> <span class="nx">_</span><span class="p">,</span> <span class="nx">Backbone</span><span class="p">,</span> <span class="nx">ProjectsCollection</span><span class="p">,</span> <span class="nx">projectsListTemplate</span><span class="p">){</span>
+  <span class="kd">var</span> <span class="nx">ProjectListView</span> <span class="o">=</span> <span class="nx">Backbone</span><span class="p">.</span><span class="nx">View</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+    <span class="nx">el</span><span class="o">:</span> <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#container&quot;</span><span class="p">),</span>
+    <span class="nx">initialize</span><span class="o">:</span> <span class="kd">function</span><span class="p">(){</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">collection</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ProjectsCollection</span><span class="p">();</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">collection</span><span class="p">.</span><span class="nx">add</span><span class="p">({</span> <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;Ginger Kid&quot;</span><span class="p">});</span>
+      <span class="c1">// Compile the template using Underscores micro-templating</span>
+      <span class="kd">var</span> <span class="nx">compiledTemplate</span> <span class="o">=</span> <span class="nx">_</span><span class="p">.</span><span class="nx">template</span><span class="p">(</span> <span class="nx">projectsListTemplate</span><span class="p">,</span> <span class="p">{</span> <span class="nx">projects</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">collection</span><span class="p">.</span><span class="nx">models</span> <span class="p">}</span> <span class="p">);</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">$el</span><span class="p">.</span><span class="nx">html</span><span class="p">(</span><span class="nx">compiledTemplate</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">});</span>
+  <span class="c1">// Returning instantiated views can be quite useful for having &quot;state&quot;</span>
+  <span class="k">return</span> <span class="nx">ProjectListView</span><span class="p">;</span>
+<span class="p">});</span></code></pre></div>
+
+<h2>Conclusion</h2>
+
+<p>Looking forward to feedback so I can turn this post and example into quality references on building modular JavaScript applications.</p>
+
+<p>Get in touch with me on twitter, comments or GitHub!</p>
+
+<h3>Relevant Links</h3>
+
+<ul>
+<li><a href="http://weblog.bocoup.com/organizing-your-backbone-js-application-with-modules">Organizing Your Backbone.js Application With Modules</a></li>
+</ul>
+
+<h3>Contributors</h3>
+
+<ul>
+<li><a href="https://github.com/dzejkej">Jakub Kozisek</a> (created modular-backbone-updated containing updated libs with AMD support)</li>
+</ul>
+
+</div>
+<hr />
+<div class="row">
+<div class="col-lg-4 col-lg-offset-4">
+            <div style="text-align: center;">
+            <img src="https://secure.gravatar.com/avatar/cff733cf90823edd218a834980379c61?s=170" class="img-circle" style=" padding:2px; border: 1px solid #ddd; width: 100px;">
+              <h2>Thomas Davis</h2>
+              <p>Founder of <a href="http://cdnjs.com">cdnjs.com</a>, <a href="http://jsonresume.org">jsonresume.org</a></p>
+              <p>Work with Drones, Open Source, Tech Policy, Javascript and Music. </p>
+<div class="addthis_horizontal_follow_toolbox" style="padding-left: 33px;"></div>
+<br />
+              <a href="https://github.com/thomasdavis">github.com/thomasdavis</a>
+            </div>
+        </div>
+        </div>
+<hr />
+
+
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=thomasdavis" async="async"></script>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'bbtutes'; // required: replace example with your forum shortname
+    var disqus_url = 'http://backbonetutorials.com/organizing-backbone-using-modules';
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+
+
+</div>
+<script src="//static.getclicky.com/js" type="text/javascript"></script>
+<script type="text/javascript">try{ clicky.init(66406579); }catch(e){}</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/66406579ns.gif" /></p></noscript>
+
+</body>
+</html>

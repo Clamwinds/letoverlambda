@@ -1,0 +1,32 @@
+{
+  "name": "react-bootstrap1",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.13.2",
+    "cookie-parser": "~1.3.5",
+    "debug": "~2.2.0",
+    "express": "~4.13.1",
+    "jade": "~1.11.0",
+    "morgan": "~1.6.1",
+    "serve-favicon": "~2.3.0",
+    "babel-core": "5.8.x",
+    "babel-loader": "5.3.3",
+    "babel": {
+      "presets": [
+        "react"
+      ],
+      "scripts": {
+        "start": "webpack-dev-server --hot --progress --colors",
+        "build": "webpack --progress --colors"
+      }
+    }
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13"
+  }
+}

@@ -1,0 +1,9 @@
+{
+    "path" : "~/R/specdata",
+    "sortOrder" : [
+        {
+            "ascending" : true,
+            "columnIndex" : 2
+        }
+    ]
+}

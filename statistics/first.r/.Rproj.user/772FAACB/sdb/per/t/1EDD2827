@@ -1,0 +1,17 @@
+{
+    "contents" : "pollutantmean <- function(directory, pollutant, id = 1:332) {\n  ## 'directory' is a character vector of length 1 indicating the location of\n  ## the CSV files\n  \n  ## 'pollutant' is a character vector of length 1 indicating the name of the\n  ## pollutant for which we will calculate the mean; either 'sulfate' or\n  ## 'nitrate'.\n  \n  ## 'id' is an integer vector indicating the monitor ID numbers to be used\n  \n  ## Return the mean of the pollutant across all monitors list in the 'id'\n  ## vector (ignoring NA values)\n  data = numeric()\n  for (i in id) {\n    \n    dataRead = read.csv(paste(directory, \"/\", formatC(i, width = 3, flag = \"0\"), \n                              \".csv\", sep = \"\")) # this is directory read boilerplate\n    \n    data = c(data, dataRead[[pollutant]]) #assigning the data numeric declared earlier The c() function can be used to create vectors of objects by concatenating things together.\n  }\n  return(mean(data, na.rm = TRUE)) #returns data\n}\n\n#The c() function can be used to create vectors of objects by concatenating things together.\n#at first i did not have my working directory set together\npollutantmean(\"specdata\", \"nitrate\", 23)\n\n",
+    "created" : 1429648067133.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2216699201",
+    "id" : "1EDD2827",
+    "lastKnownWriteTime" : 1429647306,
+    "path" : "~/code/statistics/pollutantmean.R",
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

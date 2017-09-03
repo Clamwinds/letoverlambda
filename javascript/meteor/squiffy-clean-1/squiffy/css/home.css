@@ -1,0 +1,144 @@
+/* ------------------------ */
+/* Overwrite Foundation css */
+/* ------------------------ */
+.callout { 
+	border: none;
+}
+
+/* ---------- */
+/* Custom css */
+/* ---------- */
+.backgroundPicPane {
+	height: 60vh;
+/*	background-color: #5c7aae; */
+	background-image: url(../img/homemain1.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.welcomeBottomBar {
+	background-color: #333333;
+	color: #ffffff;
+	font-weight: bold;
+	text-align: center;
+	padding-top:1.5rem;
+	padding-bottom:1rem;
+}
+
+.welcomeBarText { 
+	text-transform: uppercase;	
+	font-size: 24px;
+	max-width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.btn { font-size: 18px;} /* Overwrite from main.css */
+
+.downArrow { 
+	text-align: center; 
+	color: #c2c2c2;
+	margin-top: -5px;
+}
+
+.subSectionTitle {
+	text-transform: uppercase;
+	font-size: 22px;
+	margin-top: 6rem;
+	text-align: center;
+	color: #404040; 
+	max-width: 90%; 
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.horizontalLine, .imagesRow { max-width: 90%;}
+
+.horizontalLine {
+	margin-top:1rem;
+	margin-bottom: 1rem;
+	border: 1px solid #979797;
+    border-top: 0;
+}
+
+.imagesRow {
+	margin-top: 4rem;
+	margin-bottom: 2rem;
+}
+
+.imagesRow .columns { padding-left: 0; padding-right: 0;}
+
+#cleaningNeedsSection .imagesRow { margin-bottom: 0;}
+
+#cleaningNeedsSection { margin-bottom: 4rem;}
+
+.circleDiv {
+/*	border-radius: 100%;
+	background-color: #e2e6e8; */
+	width: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 2rem;
+}
+
+#servicesOfferedSection .circleDiv, #howItWorksSection .circleDiv { width: 140px;}
+
+
+.circleTitle {     
+	font-size: 17px;
+	text-align: center;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+	color: #404040;
+    font-weight: bold;
+}
+
+.circleContent {
+	font-size: 15px;
+	color: #5c5c5c;
+	text-align: center;
+	max-width: 350px;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.readyOrderImgDiv {
+	text-align: center;
+}
+#readyOrderImg {
+    max-width: 350px;
+}
+.readyToOrderLabel {
+	text-transform: uppercase;
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 4rem;
+    text-align: center;
+    color: #404040;  /* #8e8e8e; */
+}
+
+
+
+@media only screen and (max-width: 40em) { 
+
+	.circleDiv { margin-bottom: 0; }
+	.circleTitle { margin-top: 0; }
+	.imagesRow { margin-top: 2rem; margin-bottom: 0;}
+	.callout { margin-bottom: 0; padding-bottom: 0;}
+	.welcomeBarText { font-size: 20px; }
+}
+
+/* Smaller smart phones */ 
+@media only screen and (max-width: 320px) { 
+	.welcomeBarText, .subSectionTitle { font-size: 16px; }
+	.circleTitle { font-size: 15px;}
+	.circleContent { font-size: 13px;}
+
+}
+
+@media only screen and (min-width: 1024px) {
+	.horizontalLine, .imagesRow { max-width: 900px; }
+}
+
+

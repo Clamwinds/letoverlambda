@@ -1,0 +1,17 @@
+{
+    "contents" : "add2 <- function(x,y) {\n  x + y\n}\n\nabove10 <- function(x) {\n        use <- x < 10\n        x[use]\n        \n        \n}\n\nabove <- function(x, n) {\n  use <- x > n\n}\n                                        #above a certain number, print I believes\n \n \n",
+    "created" : 1429490494642.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "918359149",
+    "id" : "EADEC7E8",
+    "lastKnownWriteTime" : 1436660002,
+    "path" : "~/code/script.r",
+    "project_path" : "script.r",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

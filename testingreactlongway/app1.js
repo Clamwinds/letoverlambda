@@ -1,0 +1,20 @@
+var express = require('express');
+var app = express();
+app.set('port', process.argv[2] || 3000);
+app.set('view engine', 'jsx');
+app.set('views', __dirname + '/views');
+app.engine('jsx', require('express-react-views').createEngine({ transformViews: false}));
+
+require('babel-core/register')({
+    ignore: false
+
+});
+
+app.use('/', function(req, res) {
+    res.render('index', '');
+});
+
+app.listen(app.get('port'), function () {});
+
+//Creates a small express server that renders our react components
+// if someone navigates to '/', views.jsx will be rendered. This program uses the ress-react-views module

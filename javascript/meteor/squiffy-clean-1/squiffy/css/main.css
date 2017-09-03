@@ -1,0 +1,220 @@
+/* ------------------------ */
+/* Overwrite Foundation css */
+/* ------------------------ */
+.top-bar {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top-bar, .top-bar ul {
+    background-color: #ffffff; 
+}
+.menu-icon::after {
+    background: #949494;
+    box-shadow: 0 7px 0 #949494, 0 14px 0 #949494;
+}	
+
+.top-bar a { color: #333333; font-size: 14px;}
+
+.top-bar ul a, .footer ul a:visited, .footer ul a:hover {
+	padding: 0.5rem 0;
+}
+
+/*.menu > li:not(.menu-text) > a { padding: 0.4rem 1rem;}  */
+
+
+/* ---------- */
+/* Custom css */
+/* ---------- */
+body { 
+	letter-spacing: 0.5px;
+	color: #0a0a0a;
+}
+a, a:visited, a:hover, a:focus { 	
+	color: #0a0a0a;
+}
+
+.leftAlignment { text-align: left;}
+.centeredAlignment { text-align: center;}
+
+.logo { width: 180px; padding-left: 1rem;}
+
+.top-bar-left .logo { margin-top: 0.3rem;}
+
+.top-bar .navSelected { border-bottom: 2px solid #5aa3e8;}
+
+.footer .navSelected { border-bottom: 2px solid #ffffff;}
+
+.bodySection {
+    background-color: #f2f2f2;
+	padding: 2rem;
+}
+.bodyContent { 
+	max-width: 800px;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.contentBox {
+    background-color: #ffffff;
+    padding: 1rem;
+    border: 1px solid #cacaca;
+}
+
+.contentBox .columns {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.partialHR {     
+    max-width: 73%;
+    margin-left: 0;
+}
+
+.pageTitle { 
+	color: #5aa3e8;
+    font-size: 20px;
+    letter-spacing: 1.2px;
+    font-weight: bold;
+}
+
+.smallPageTitle { 
+    color: #5aa3e8;
+    font-size: 18px;
+    letter-spacing: 1.2px;
+    font-weight: bold;
+}
+
+.pageTopText { font-size: 14px; margin-top: 0.5rem;}
+
+
+.btn, a.btn, a.btn:visited, a.btn:hover, a.btn:focus {
+    width: 7rem;
+    border-radius: 25px;
+    background-color: #f5a623;
+    color: #ffffff;
+    padding: 0.5rem 2rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+.btnSmall, a.btnSmall, a.btnSmall:visited, a.btnSmall:hover, a.btnSmall:focus {
+	width: 4rem;
+    padding: 0.3rem 0.8rem;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+}
+
+.cancelBtn, a.cancelBtn, a.cancelBtn:visited, a.cancelBtn:hover, a.cancelBtn:focus {
+    background-color: #ffffff;
+    color: #333333;
+    border: 1px solid #cacaca;
+}
+
+.buttonWrapper { 
+	text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.bottomText, a.bottomText { font-size:11px; margin-top: 0.5rem;}
+
+
+/* -------------------- */
+/*  Confirmation Modal  */ 
+/* -------------------- */
+#confirmationWindow {
+    background-color: #4a90e2;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    outline: 0px !important;
+}
+
+#confirmationWindow .close-button, #errorWindow .close-button { color: #ffffff;}
+
+
+/* ------------- */
+/*  Error Modal  */ 
+/* ------------- */
+#errorWindow {
+    background-color: #4d4d4d; /* #9b9b9b; */
+    color: #ffffff;
+    border: none;
+    max-width: 50rem;
+    outline: 0px !important;
+    padding: 2rem;
+}
+
+#errorWindow .emailAddrLine.row {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+#errorWindow .emailAddrLine.row .column {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#errorWindow .buttonWrapper { margin-top: 2rem;}
+
+#errorWindow .sendBtn, #errorWindow .cancelBtn {
+    max-width:7rem; min-width:7rem;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+}
+
+#errorWindow .cancelBtn { 
+    background: transparent;
+    margin-left: 1.5rem;
+}
+#errorWindow .cancelBtn a { color: #ffffff;}
+
+#errorWindow input[type='text'].emailAddrInput {
+    max-width: 380px;
+}
+
+
+/* ---------- */
+/*   Footer   */ 
+/* ---------- */
+.footer {
+/*	background-color: rgba(0, 0, 0, 0.6); */
+    background-color: #4a4a4a;
+	padding: 1.2rem 2rem;
+}
+.footer .row {
+	max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer .row .columns { padding-left:0; padding-right:0; }
+
+.footer .socialIconsCol { text-align: right;}
+
+.footer ul li { display: inline-block; padding-right: 1rem;}
+
+.footer ul a, .footer ul a:visited, .footer ul a:hover {
+	color: #ffffff; 
+	font-size: 14px;
+	padding: 0.3rem 0;
+}
+
+.footer .bottomText { color: #ffffff; margin-top: 0;}
+
+.footer .socialIconsCol .fa { padding-left: 0.2rem;}
+
+
+@media only screen and (max-width: 40em) { 
+
+    .bodySection { padding: 1rem 1.5rem;}
+    .pageTopText { font-size: 13px;}
+    .partialHR { max-width: 80%;}
+    .bottomText, a.bottomText { font-size: 10px;}
+    
+}
+
+/* Smaller smart phones */ 
+@media only screen and (max-width: 320px) { 
+
+}

@@ -169,3 +169,20 @@
                                         ; for this on ` worked over '
 (sleep-units .5 h)
 ; when I eval this in either slime or 'lisp-inferior' i get Evaluated aborted on #<Simple-Type-Error expected-type: umber datum: NIl>
+
+(defmacro unit-of-time (value unit)
+  `(* ,value
+    ,(case unit
+       ((s) 1)
+       ((m) 60)
+       ((h) 3600)
+       ((d) 86400)
+       ((ms) 1/1000)
+       ((us) 1/1000000))))
+;; ohh in the lisp repl you do not need to ask for an input as you can input whatever you desire and have it evaled anyways
+
+(defmacro nlet (n letargs &rest body)
+  `(labels ((,n ,(mapcar #'car letargs)
+              ,@body))
+     (,n ,@(mapcar #'cadr letargs))))
+; for some reason the backquote. ahhh the ` is different in usage than ', I just wasn't looking closely enough.
